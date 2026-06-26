@@ -9,7 +9,7 @@ const privacyPoints = [
 
 export function PrivacySection() {
   return (
-    <section className="border-t border-neutral-200 bg-white">
+    <section id="privacy" className="border-t border-neutral-200 bg-white">
       <div className="mx-auto max-w-6xl px-5 py-20 sm:px-8 lg:py-28">
         <div className="grid gap-12 lg:grid-cols-[1fr_1.1fr] lg:gap-16">
           <div className="max-w-md">

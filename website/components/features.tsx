@@ -1,5 +1,6 @@
-import { Camera, ChevronDown, Command, FlipHorizontal2, Move, Pin, Video } from 'lucide-react'
+import { Camera, Command, Move, Pin, Video } from 'lucide-react'
 import { FeatureSection } from './feature-section'
+import { ProductPreview } from './product-preview'
 
 function MenuBarVisual() {
   return (
@@ -30,31 +31,6 @@ function MenuBarVisual() {
             <li className="px-3 py-2 text-neutral-400">Quit Kondreh</li>
           </ul>
         </div>
-      </div>
-    </div>
-  )
-}
-
-function CameraControlsVisual() {
-  return (
-    <div className="overflow-hidden rounded-xl border border-neutral-200 bg-white shadow-[0_24px_60px_-24px_rgba(0,0,0,0.25)]">
-      <div className="flex items-center gap-1.5 border-b border-neutral-200 bg-neutral-50 px-3 py-2">
-        <span className="size-2.5 rounded-full bg-neutral-200" />
-        <span className="size-2.5 rounded-full bg-neutral-200" />
-        <span className="size-2.5 rounded-full bg-neutral-200" />
-      </div>
-      <div className="flex aspect-[4/3] items-center justify-center bg-neutral-900 text-neutral-600">
-        <Camera className="size-8" aria-hidden="true" />
-      </div>
-      <div className="flex items-center gap-2 border-t border-neutral-200 px-3 py-3">
-        <div className="inline-flex flex-1 items-center justify-between rounded-md border border-neutral-200 px-2.5 py-1.5 text-[12px] font-medium text-neutral-700">
-          <span className="truncate">FaceTime HD Camera</span>
-          <ChevronDown className="size-3.5 text-neutral-400" aria-hidden="true" />
-        </div>
-        <span className="inline-flex items-center gap-1.5 rounded-md border border-neutral-900 bg-neutral-900 px-2.5 py-1.5 text-[12px] font-medium text-white">
-          <FlipHorizontal2 className="size-3.5" />
-          Mirror
-        </span>
       </div>
     </div>
   )
@@ -128,7 +104,7 @@ export function Features() {
               'Mirror the preview',
               'Change the aspect ratio',
             ]}
-            visual={<CameraControlsVisual />}
+            visual={<ProductPreview compact startLabel="Start preview" />}
             reversed
           />
 

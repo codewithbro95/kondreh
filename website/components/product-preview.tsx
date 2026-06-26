@@ -1,11 +1,17 @@
 'use client'
 
-import { useCallback, useEffect, useRef, useState } from 'react'
+import { useCallback, useEffect, useId, useRef, useState } from 'react'
 import { Camera, FlipHorizontal2, Pin, VideoOff } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
 type Ratio = '16:9' | '4:3' | '1:1'
 type Status = 'idle' | 'loading' | 'on' | 'denied' | 'error'
+
+type ProductPreviewProps = {
+  className?: string
+  startLabel?: string
+  compact?: boolean
+}
 
 const ratios: { label: Ratio; value: string }[] = [
   { label: '16:9', value: '16 / 9' },
@@ -18,7 +24,12 @@ const ratios: { label: Ratio; value: string }[] = [
  * directly in the browser. Picks a camera, flips the view, and changes the
  * aspect ratio — all live. Everything stays on-device; nothing is recorded.
  */
-export function ProductPreview({ className }: { className?: string }) {
+export function ProductPreview({
+  className,
+  startLabel = 'Start camera',
+  compact = false,
+}: ProductPreviewProps) {
+  const cameraSelectId = useId()
   const videoRef = useRef<HTMLVideoElement>(null)
   const streamRef = useRef<MediaStream | null>(null)
 
@@ -52,7 +63,7 @@ export function ProductPreview({ className }: { className?: string }) {
           videoRef.current.srcObject = stream
           await videoRef.current.play().catch(() => {})
         }
-        const list = await navigator.mediaDevices.enumerateDevices()
+        const list = await navigator.mediaDevices.enumerateDevices().catch(() => [])
         const cams = list.filter((d) => d.kind === 'videoinput')
         setDevices(cams)
         const active = stream.getVideoTracks()[0]?.getSettings().deviceId
@@ -79,9 +90,9 @@ export function ProductPreview({ className }: { className?: string }) {
   return (
     <figure
       className={cn(
-        'w-full overflow-hidden rounded-xl border bg-white transition-shadow',
+        'w-full overflow-hidden rounded-xl border bg-white transition-all',
         onTop
-          ? 'border-neutral-900 shadow-[0_24px_70px_-20px_rgba(0,0,0,0.4)]'
+          ? 'fixed bottom-4 right-4 z-[80] max-h-[calc(100vh-2rem)] w-[min(420px,calc(100vw-2rem))] border-neutral-900 shadow-[0_24px_70px_-20px_rgba(0,0,0,0.4)] sm:bottom-6 sm:right-6'
           : 'border-neutral-200 shadow-[0_24px_60px_-24px_rgba(0,0,0,0.25)]',
         className,
       )}
@@ -101,6 +112,7 @@ export function ProductPreview({ className }: { className?: string }) {
           type="button"
           onClick={() => setOnTop((v) => !v)}
           aria-pressed={onTop}
+          aria-label={onTop ? 'Unpin preview' : 'Pin preview'}
           className={cn(
             'inline-flex items-center gap-1 rounded-md border px-2 py-1 text-[11px] font-medium transition-colors',
             onTop
@@ -109,7 +121,7 @@ export function ProductPreview({ className }: { className?: string }) {
           )}
         >
           <Pin className="size-3" />
-          Top
+          {onTop ? 'Pinned' : 'Pin'}
         </button>
       </div>
 
@@ -120,8 +132,10 @@ export function ProductPreview({ className }: { className?: string }) {
       >
         <video
           ref={videoRef}
+          autoPlay
           playsInline
           muted
+          onLoadedMetadata={() => videoRef.current?.play().catch(() => {})}
           className={cn(
             'size-full object-cover transition-opacity',
             isOn ? 'opacity-100' : 'opacity-0',
@@ -161,7 +175,7 @@ export function ProductPreview({ className }: { className?: string }) {
                   disabled={status === 'loading'}
                   className="rounded-lg bg-white px-5 py-2.5 text-sm font-medium text-neutral-900 transition-colors hover:bg-neutral-200 disabled:opacity-60"
                 >
-                  {status === 'loading' ? 'Starting…' : 'Start camera'}
+                  {status === 'loading' ? 'Starting...' : startLabel}
                 </button>
               </>
             )}
@@ -177,35 +191,47 @@ export function ProductPreview({ className }: { className?: string }) {
       </div>
 
       {/* Controls */}
-      <div className="flex flex-wrap items-center gap-2 border-t border-neutral-200 bg-white px-3 py-3">
-        <label className="sr-only" htmlFor="kondreh-camera">
+      <div
+        className={cn(
+          'flex flex-wrap items-center gap-2 border-t border-neutral-200 bg-white px-3 py-3',
+          compact && 'px-2.5 py-2.5',
+        )}
+      >
+        <label className="sr-only" htmlFor={cameraSelectId}>
           Choose camera
         </label>
-        <select
-          id="kondreh-camera"
-          value={deviceId}
-          onChange={handleDeviceChange}
-          disabled={!isOn || devices.length === 0}
-          className="flex-1 truncate rounded-md border border-neutral-200 bg-white px-2.5 py-1.5 text-[12px] font-medium text-neutral-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-900 disabled:text-neutral-400"
-        >
-          {devices.length === 0 ? (
-            <option>Start camera to choose</option>
-          ) : (
-            devices.map((d, i) => (
+        {devices.length === 0 ? (
+          <button
+            id={cameraSelectId}
+            type="button"
+            onClick={() => start()}
+            disabled={status === 'loading'}
+            className="flex-1 truncate rounded-md border border-neutral-200 bg-white px-2.5 py-1.5 text-left text-[12px] font-medium text-neutral-500 transition-colors hover:bg-neutral-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-900 disabled:opacity-60"
+          >
+            {status === 'loading' ? 'Starting...' : 'Start camera to choose'}
+          </button>
+        ) : (
+          <select
+            id={cameraSelectId}
+            value={deviceId}
+            onChange={handleDeviceChange}
+            disabled={!isOn}
+            className="flex-1 truncate rounded-md border border-neutral-200 bg-white px-2.5 py-1.5 text-[12px] font-medium text-neutral-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-900 disabled:text-neutral-400"
+          >
+            {devices.map((d, i) => (
               <option key={d.deviceId} value={d.deviceId}>
                 {d.label || `Camera ${i + 1}`}
               </option>
-            ))
-          )}
-        </select>
+            ))}
+          </select>
+        )}
 
         <button
           type="button"
           onClick={() => setMirror((v) => !v)}
           aria-pressed={mirror}
-          disabled={!isOn}
           className={cn(
-            'inline-flex items-center gap-1.5 rounded-md border px-2.5 py-1.5 text-[12px] font-medium transition-colors disabled:opacity-50',
+            'inline-flex items-center gap-1.5 rounded-md border px-2.5 py-1.5 text-[12px] font-medium transition-colors',
             mirror
               ? 'border-neutral-900 bg-neutral-900 text-white'
               : 'border-neutral-200 bg-white text-neutral-700 hover:bg-neutral-50',

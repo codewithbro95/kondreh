@@ -1,10 +1,14 @@
-import { KONDREH_DOWNLOAD_PATH } from '@/lib/download'
+import {
+  KONDREH_DOWNLOAD_PATH,
+  KONDREH_SUPPORT_EMAIL,
+  KONDREH_SUPPORT_MAILTO,
+} from '@/lib/download'
 
 const footerLinks = [
   { label: 'Download', href: KONDREH_DOWNLOAD_PATH },
   { label: 'Support', href: '#support' },
-  { label: 'Privacy', href: '#' },
-  { label: 'Contact', href: 'mailto:hello@kondreh.app' },
+  { label: 'Privacy', href: '#privacy' },
+  { label: 'Contact', href: KONDREH_SUPPORT_MAILTO },
 ]
 
 export function Footer() {
@@ -41,12 +45,11 @@ export function Footer() {
           <p>
             Support:{' '}
             <a
-              href="mailto:support@kondreh.app"
+              href={KONDREH_SUPPORT_MAILTO}
               className="rounded-sm underline-offset-4 hover:text-neutral-900 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-neutral-900"
             >
-              support@kondreh.app
-            </a>{' '}
-            [placeholder]
+              {KONDREH_SUPPORT_EMAIL}
+            </a>
           </p>
           <p>© {new Date().getFullYear()} Kondreh. All rights reserved.</p>
         </div>

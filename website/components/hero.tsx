@@ -1,5 +1,5 @@
 import { ProductPreview } from './product-preview'
-import { KONDREH_DOWNLOAD_PATH } from '@/lib/download'
+import { KONDREH_DOWNLOAD_PATH, KONDREH_TIP_MAILTO } from '@/lib/download'
 
 const heroDetails = ['macOS', 'Free', 'Works offline', 'No account']
 
@@ -31,7 +31,7 @@ export function Hero() {
               Download beta 0.1
             </a>
             <a
-              href="#support"
+              href={KONDREH_TIP_MAILTO}
               className="inline-flex items-center justify-center rounded-lg border border-neutral-300 bg-white px-6 py-3 text-base font-medium text-neutral-900 transition-colors hover:bg-neutral-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-900"
             >
               Buy me a coffee

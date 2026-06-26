@@ -1,18 +1,22 @@
 import { Coffee, Download, Heart } from 'lucide-react'
-import { KONDREH_BETA_VERSION, KONDREH_DOWNLOAD_PATH } from '@/lib/download'
+import {
+  KONDREH_BETA_VERSION,
+  KONDREH_DOWNLOAD_PATH,
+  KONDREH_TIP_MAILTO,
+} from '@/lib/download'
 
 const support = [
   {
     icon: Coffee,
     label: 'Buy me a coffee',
     note: '$5 — a small thanks',
-    href: '#', // [replace with your Buy Me a Coffee / Ko-fi link]
+    href: KONDREH_TIP_MAILTO,
   },
   {
     icon: Heart,
     label: 'Donate any amount',
     note: "Pay what it's worth to you",
-    href: '#', // [replace with your donation link]
+    href: KONDREH_TIP_MAILTO,
   },
 ]
 
