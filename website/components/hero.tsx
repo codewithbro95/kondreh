@@ -15,10 +15,10 @@ export function Hero() {
             Mac menu bar camera preview
           </p>
           <h1 className="mt-4 text-balance text-4xl font-bold leading-[1.05] tracking-tight text-neutral-900 sm:text-5xl lg:text-6xl">
-            See yourself before they see you.
+              A quick camera check before every meeting.
           </h1>
           <p className="mt-6 text-pretty text-lg leading-relaxed text-neutral-600">
-            A quick camera check from your menu bar. Fix your lighting and
+            Fix your lighting and
             framing before you join the call. Try it right here.
           </p>
 
