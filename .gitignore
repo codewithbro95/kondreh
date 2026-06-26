@@ -1,0 +1,43 @@
+# v0 sandbox internal files
+__v0_runtime_loader.js
+__v0_devtools.tsx
+__v0_jsx-dev-runtime.ts
+.snowflake/
+.v0-trash/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+
+# Xcode / SwiftPM
+.build/
+.swiftpm/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+*.xcresult
+*.xccheckout
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM/
+*.xcarchive/
+
+# Website dependencies and build output
+node_modules/
+.next/
+out/
+dist/
+.vercel/
+
+# Editor / local tooling
+.vscode/
+.idea/
+*.swp

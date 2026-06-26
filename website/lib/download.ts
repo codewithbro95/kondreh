@@ -1,0 +1,5 @@
+export const KONDREH_BETA_VERSION = '0.1'
+
+export const KONDREH_DOWNLOAD_FILENAME = `Kondreh-${KONDREH_BETA_VERSION}-beta.zip`
+
+export const KONDREH_DOWNLOAD_PATH = `/downloads/${KONDREH_DOWNLOAD_FILENAME}`

@@ -1,3 +1,5 @@
+import { KONDREH_DOWNLOAD_PATH } from '@/lib/download'
+
 export function FinalCTA() {
   return (
     <section className="border-t border-neutral-200 bg-white">
@@ -8,10 +10,11 @@ export function FinalCTA() {
 
         <div className="mt-8">
           <a
-            href="#download"
+            href={KONDREH_DOWNLOAD_PATH}
+            download
             className="inline-flex items-center justify-center rounded-lg bg-neutral-900 px-7 py-3.5 text-base font-medium text-white transition-colors hover:bg-neutral-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-900"
           >
-            Download — it&apos;s free
+            Download beta 0.1
           </a>
         </div>
       </div>

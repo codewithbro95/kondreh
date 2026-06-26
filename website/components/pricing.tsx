@@ -1,4 +1,5 @@
 import { Coffee, Download, Heart } from 'lucide-react'
+import { KONDREH_BETA_VERSION, KONDREH_DOWNLOAD_PATH } from '@/lib/download'
 
 const support = [
   {
@@ -21,10 +22,10 @@ export function Pricing() {
       <div className="mx-auto max-w-6xl px-5 py-20 sm:px-8 lg:py-28">
         <div className="mx-auto max-w-xl text-center">
           <h2 className="text-balance text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl">
-            Free. Forever.
+            Download beta {KONDREH_BETA_VERSION}.
           </h2>
           <p className="mt-4 text-pretty text-lg leading-relaxed text-neutral-600">
-            No price, no account, no catch. If it helps, you can support it.
+            Try Kondreh on macOS 13 or later. No account, no cloud, no catch.
           </p>
         </div>
 
@@ -37,11 +38,12 @@ export function Pricing() {
           </div>
 
           <a
-            href="#" // [replace with your macOS download link]
+            href={KONDREH_DOWNLOAD_PATH}
+            download
             className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-lg bg-neutral-900 px-6 py-3 text-base font-medium text-white transition-colors hover:bg-neutral-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-900"
           >
             <Download className="size-4" aria-hidden="true" />
-            Download for macOS
+            Download beta {KONDREH_BETA_VERSION} for macOS
           </a>
 
           <div id="support" className="mt-8 border-t border-neutral-200 pt-6">

@@ -1,5 +1,7 @@
+import { KONDREH_DOWNLOAD_PATH } from '@/lib/download'
+
 const footerLinks = [
-  { label: 'Download', href: '#download' },
+  { label: 'Download', href: KONDREH_DOWNLOAD_PATH },
   { label: 'Support', href: '#support' },
   { label: 'Privacy', href: '#' },
   { label: 'Contact', href: 'mailto:hello@kondreh.app' },

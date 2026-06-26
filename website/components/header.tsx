@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
+import { KONDREH_DOWNLOAD_PATH } from '@/lib/download'
 
 const navLinks = [
   { label: 'Features', href: '#features' },
@@ -40,7 +41,8 @@ export function Header() {
 
         <div className="flex items-center gap-2">
           <a
-            href="#download"
+            href={KONDREH_DOWNLOAD_PATH}
+            download
             className="hidden rounded-lg bg-neutral-900 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-neutral-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-900 sm:inline-flex"
           >
             Download
@@ -79,11 +81,12 @@ export function Header() {
             ))}
             <li className="py-2">
               <a
-                href="#download"
+                href={KONDREH_DOWNLOAD_PATH}
+                download
                 onClick={() => setOpen(false)}
                 className="inline-flex w-full items-center justify-center rounded-lg bg-neutral-900 px-4 py-3 text-base font-medium text-white hover:bg-neutral-700"
               >
-                Download — it&apos;s free
+                Download beta 0.1
               </a>
             </li>
           </ul>
