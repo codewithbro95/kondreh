@@ -1,0 +1,2000 @@
+{
+  "builtTestProducts" : [
+    {
+      "binaryPath" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehPackageTests.xctest/Contents/MacOS/KondrehPackageTests",
+      "packagePath" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh",
+      "productName" : "KondrehPackageTests"
+    }
+  ],
+  "copyCommands" : {
+    "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/Kondreh_KondrehApp.bundle/AppIcon.svg" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Resources/AppIcon.svg"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/Kondreh_KondrehApp.bundle/AppIcon.svg"
+        }
+      ]
+    },
+    "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/Kondreh_KondrehApp.bundle/Assets.xcassets" : {
+      "inputs" : [
+        {
+          "kind" : "directory",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Resources/Assets.xcassets"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "directory",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/Kondreh_KondrehApp.bundle/Assets.xcassets"
+        }
+      ]
+    },
+    "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/Kondreh_KondrehApp.bundle/MenuBarIcon.png" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Resources/MenuBarIcon.png"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/Kondreh_KondrehApp.bundle/MenuBarIcon.png"
+        }
+      ]
+    },
+    "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/Kondreh_KondrehApp.bundle/PrivacySummary.txt" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Resources/PrivacySummary.txt"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/Kondreh_KondrehApp.bundle/PrivacySummary.txt"
+        }
+      ]
+    }
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.KondrehApp-arm64-apple-macosx-release.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/sources",
+      "importPath" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/App/AppCommands.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/App/AppDelegate.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/App/AppEnvironment.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/App/KondrehApp.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Camera/CameraManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Camera/CameraPreviewRepresentable.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/MenuBar/MenuBarController.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/MenuBar/PreviewPanelController.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Onboarding/OnboardingPage.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Onboarding/OnboardingView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Onboarding/OnboardingWindowController.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Preview/CameraErrorView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Preview/NoCameraView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Preview/PermissionView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Preview/PreviewControlsView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Preview/PreviewView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Preview/PreviewViewModel.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Preview/PurchaseView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Services/LaunchAtLoginService.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Settings/AboutSettingsView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Settings/AppSettingsView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Settings/AppearanceSettingsView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Settings/CameraSettingsView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Settings/GeneralSettingsView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Settings/KeyboardSettingsView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Settings/PrivacySettingsView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Shortcuts/CarbonGlobalShortcutManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Shortcuts/ShortcutRecorderView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Utilities/AppAppearance+SwiftUI.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Utilities/ScreenPositioning.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Utilities/SystemSettingsOpener.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/DerivedSources/resource_bundle_accessor.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "virtual",
+          "name" : "<KondrehApp-arm64-apple-macosx-release.module-resources>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/Modules/KondrehCore.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/sources"
+        }
+      ],
+      "isLibrary" : false,
+      "moduleName" : "KondrehApp",
+      "moduleOutputPath" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/Modules/KondrehApp.swiftmodule",
+      "objects" : [
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/AppCommands.swift.o",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/AppDelegate.swift.o",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/AppEnvironment.swift.o",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/KondrehApp.swift.o",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/CameraManager.swift.o",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/CameraPreviewRepresentable.swift.o",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/MenuBarController.swift.o",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/PreviewPanelController.swift.o",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/OnboardingPage.swift.o",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/OnboardingView.swift.o",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/OnboardingWindowController.swift.o",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/CameraErrorView.swift.o",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/NoCameraView.swift.o",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/PermissionView.swift.o",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/PreviewControlsView.swift.o",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/PreviewView.swift.o",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/PreviewViewModel.swift.o",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/PurchaseView.swift.o",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/LaunchAtLoginService.swift.o",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/AboutSettingsView.swift.o",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/AppSettingsView.swift.o",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/AppearanceSettingsView.swift.o",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/CameraSettingsView.swift.o",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/GeneralSettingsView.swift.o",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/KeyboardSettingsView.swift.o",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/PrivacySettingsView.swift.o",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/CarbonGlobalShortcutManager.swift.o",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/ShortcutRecorderView.swift.o",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/AppAppearance+SwiftUI.swift.o",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/ScreenPositioning.swift.o",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/SystemSettingsOpener.swift.o",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/resource_bundle_accessor.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx13.0",
+        "-whole-module-optimization",
+        "-num-threads",
+        "8",
+        "-serialize-diagnostics",
+        "-O",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_AVAILABLE",
+        "-module-cache-path",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/ModuleCache",
+        "-parseable-output",
+        "-Xfrontend",
+        "-entry-point-function-name",
+        "-Xfrontend",
+        "KondrehApp_main",
+        "-swift-version",
+        "5",
+        "-DDEVELOPMENT_LICENSE_PROVIDER",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "kondreh"
+      ],
+      "outputFileMapPath" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/AppCommands.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/AppDelegate.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/AppEnvironment.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/KondrehApp.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/CameraManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/CameraPreviewRepresentable.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/MenuBarController.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/PreviewPanelController.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/OnboardingPage.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/OnboardingView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/OnboardingWindowController.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/CameraErrorView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/NoCameraView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/PermissionView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/PreviewControlsView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/PreviewView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/PreviewViewModel.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/PurchaseView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/LaunchAtLoginService.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/AboutSettingsView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/AppSettingsView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/AppearanceSettingsView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/CameraSettingsView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/GeneralSettingsView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/KeyboardSettingsView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/PrivacySettingsView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/CarbonGlobalShortcutManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/ShortcutRecorderView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/AppAppearance+SwiftUI.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/ScreenPositioning.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/SystemSettingsOpener.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/resource_bundle_accessor.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/Modules/KondrehApp.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/App/AppCommands.swift",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/App/AppDelegate.swift",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/App/AppEnvironment.swift",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/App/KondrehApp.swift",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Camera/CameraManager.swift",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Camera/CameraPreviewRepresentable.swift",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/MenuBar/MenuBarController.swift",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/MenuBar/PreviewPanelController.swift",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Onboarding/OnboardingPage.swift",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Onboarding/OnboardingView.swift",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Onboarding/OnboardingWindowController.swift",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Preview/CameraErrorView.swift",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Preview/NoCameraView.swift",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Preview/PermissionView.swift",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Preview/PreviewControlsView.swift",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Preview/PreviewView.swift",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Preview/PreviewViewModel.swift",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Preview/PurchaseView.swift",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Services/LaunchAtLoginService.swift",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Settings/AboutSettingsView.swift",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Settings/AppSettingsView.swift",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Settings/AppearanceSettingsView.swift",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Settings/CameraSettingsView.swift",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Settings/GeneralSettingsView.swift",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Settings/KeyboardSettingsView.swift",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Settings/PrivacySettingsView.swift",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Shortcuts/CarbonGlobalShortcutManager.swift",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Shortcuts/ShortcutRecorderView.swift",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Utilities/AppAppearance+SwiftUI.swift",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Utilities/ScreenPositioning.swift",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Utilities/SystemSettingsOpener.swift",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/DerivedSources/resource_bundle_accessor.swift"
+      ],
+      "tempsPath" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build",
+      "wholeModuleOptimization" : true
+    },
+    "C.KondrehCore-arm64-apple-macosx-release.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/sources",
+      "importPath" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Camera/CameraAuthorizationService.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Camera/CameraDevice.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Camera/CameraDeviceSelector.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Camera/CameraPermissionState.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Camera/CameraSessionError.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Camera/CameraSessionState.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Camera/PreviewLifecycleReducer.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Licensing/LicenseProviding.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Licensing/LicenseState.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Licensing/LocalDevelopmentLicenseProvider.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Services/LaunchAtLoginState.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Services/LaunchAtLoginStatusMapper.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Services/UpdateProviding.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Settings/AppAppearance.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Settings/PreviewAspectRatio.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Settings/PreviewQuality.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Settings/SettingsService.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Shortcuts/GlobalShortcutManaging.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Shortcuts/KeyboardShortcut.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Utilities/AppConstants.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Utilities/AppLogger.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "KondrehCore",
+      "moduleOutputPath" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/Modules/KondrehCore.swiftmodule",
+      "objects" : [
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/CameraAuthorizationService.swift.o",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/CameraDevice.swift.o",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/CameraDeviceSelector.swift.o",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/CameraPermissionState.swift.o",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/CameraSessionError.swift.o",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/CameraSessionState.swift.o",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/PreviewLifecycleReducer.swift.o",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/LicenseProviding.swift.o",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/LicenseState.swift.o",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/LocalDevelopmentLicenseProvider.swift.o",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/LaunchAtLoginState.swift.o",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/LaunchAtLoginStatusMapper.swift.o",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/UpdateProviding.swift.o",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/AppAppearance.swift.o",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/PreviewAspectRatio.swift.o",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/PreviewQuality.swift.o",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/SettingsService.swift.o",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/GlobalShortcutManaging.swift.o",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/KeyboardShortcut.swift.o",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/AppConstants.swift.o",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/AppLogger.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx13.0",
+        "-whole-module-optimization",
+        "-num-threads",
+        "8",
+        "-serialize-diagnostics",
+        "-O",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/include/KondrehCore-Swift.h",
+        "-swift-version",
+        "5",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "kondreh"
+      ],
+      "outputFileMapPath" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/CameraAuthorizationService.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/CameraDevice.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/CameraDeviceSelector.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/CameraPermissionState.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/CameraSessionError.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/CameraSessionState.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/PreviewLifecycleReducer.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/LicenseProviding.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/LicenseState.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/LocalDevelopmentLicenseProvider.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/LaunchAtLoginState.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/LaunchAtLoginStatusMapper.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/UpdateProviding.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/AppAppearance.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/PreviewAspectRatio.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/PreviewQuality.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/SettingsService.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/GlobalShortcutManaging.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/KeyboardShortcut.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/AppConstants.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/AppLogger.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/Modules/KondrehCore.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Camera/CameraAuthorizationService.swift",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Camera/CameraDevice.swift",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Camera/CameraDeviceSelector.swift",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Camera/CameraPermissionState.swift",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Camera/CameraSessionError.swift",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Camera/CameraSessionState.swift",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Camera/PreviewLifecycleReducer.swift",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Licensing/LicenseProviding.swift",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Licensing/LicenseState.swift",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Licensing/LocalDevelopmentLicenseProvider.swift",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Services/LaunchAtLoginState.swift",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Services/LaunchAtLoginStatusMapper.swift",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Services/UpdateProviding.swift",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Settings/AppAppearance.swift",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Settings/PreviewAspectRatio.swift",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Settings/PreviewQuality.swift",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Settings/SettingsService.swift",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Shortcuts/GlobalShortcutManaging.swift",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Shortcuts/KeyboardShortcut.swift",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Utilities/AppConstants.swift",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Utilities/AppLogger.swift"
+      ],
+      "tempsPath" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build",
+      "wholeModuleOptimization" : true
+    },
+    "C.KondrehCoreTests-arm64-apple-macosx-release.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCoreTests.build/sources",
+      "importPath" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Tests/KondrehCoreTests/CameraAuthorizationServiceTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Tests/KondrehCoreTests/CameraDeviceSelectorTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Tests/KondrehCoreTests/LaunchAtLoginStateTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Tests/KondrehCoreTests/LicenseServiceTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Tests/KondrehCoreTests/PreviewViewModelTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Tests/KondrehCoreTests/SettingsServiceTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Tests/KondrehCoreTests/ShortcutTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/Modules/KondrehCore.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCoreTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "KondrehCoreTests",
+      "moduleOutputPath" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/Modules/KondrehCoreTests.swiftmodule",
+      "objects" : [
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCoreTests.build/CameraAuthorizationServiceTests.swift.o",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCoreTests.build/CameraDeviceSelectorTests.swift.o",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCoreTests.build/LaunchAtLoginStateTests.swift.o",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCoreTests.build/LicenseServiceTests.swift.o",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCoreTests.build/PreviewViewModelTests.swift.o",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCoreTests.build/SettingsServiceTests.swift.o",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCoreTests.build/ShortcutTests.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx14.0",
+        "-whole-module-optimization",
+        "-num-threads",
+        "8",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/index/store",
+        "-O",
+        "-enable-testing",
+        "-Xfrontend",
+        "-enable-cross-import-overlays",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-swift-version",
+        "5",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "kondreh"
+      ],
+      "outputFileMapPath" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCoreTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCoreTests.build/CameraAuthorizationServiceTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCoreTests.build/CameraDeviceSelectorTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCoreTests.build/LaunchAtLoginStateTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCoreTests.build/LicenseServiceTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCoreTests.build/PreviewViewModelTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCoreTests.build/SettingsServiceTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCoreTests.build/ShortcutTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/Modules/KondrehCoreTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Tests/KondrehCoreTests/CameraAuthorizationServiceTests.swift",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Tests/KondrehCoreTests/CameraDeviceSelectorTests.swift",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Tests/KondrehCoreTests/LaunchAtLoginStateTests.swift",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Tests/KondrehCoreTests/LicenseServiceTests.swift",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Tests/KondrehCoreTests/PreviewViewModelTests.swift",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Tests/KondrehCoreTests/SettingsServiceTests.swift",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Tests/KondrehCoreTests/ShortcutTests.swift"
+      ],
+      "tempsPath" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCoreTests.build",
+      "wholeModuleOptimization" : true
+    },
+    "C.KondrehPackageTests-arm64-apple-macosx-release.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehPackageTests.build/sources",
+      "importPath" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehPackageTests.derived/runner.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/Modules/KondrehCoreTests.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehPackageTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "KondrehPackageTests",
+      "moduleOutputPath" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/Modules/KondrehPackageTests.swiftmodule",
+      "objects" : [
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehPackageTests.build/runner.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx13.0",
+        "-whole-module-optimization",
+        "-num-threads",
+        "8",
+        "-serialize-diagnostics",
+        "-O",
+        "-enable-testing",
+        "-Xfrontend",
+        "-enable-cross-import-overlays",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehPackageTests.build/include/KondrehPackageTests-Swift.h",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "kondreh"
+      ],
+      "outputFileMapPath" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehPackageTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehPackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/Modules/KondrehPackageTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehPackageTests.derived/runner.swift"
+      ],
+      "tempsPath" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehPackageTests.build",
+      "wholeModuleOptimization" : true
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "KondrehApp" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "KondrehApp",
+      "-package-name",
+      "kondreh",
+      "-c",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/App/AppCommands.swift",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/App/AppDelegate.swift",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/App/AppEnvironment.swift",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/App/KondrehApp.swift",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Camera/CameraManager.swift",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Camera/CameraPreviewRepresentable.swift",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/MenuBar/MenuBarController.swift",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/MenuBar/PreviewPanelController.swift",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Onboarding/OnboardingPage.swift",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Onboarding/OnboardingView.swift",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Onboarding/OnboardingWindowController.swift",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Preview/CameraErrorView.swift",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Preview/NoCameraView.swift",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Preview/PermissionView.swift",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Preview/PreviewControlsView.swift",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Preview/PreviewView.swift",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Preview/PreviewViewModel.swift",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Preview/PurchaseView.swift",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Services/LaunchAtLoginService.swift",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Settings/AboutSettingsView.swift",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Settings/AppSettingsView.swift",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Settings/AppearanceSettingsView.swift",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Settings/CameraSettingsView.swift",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Settings/GeneralSettingsView.swift",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Settings/KeyboardSettingsView.swift",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Settings/PrivacySettingsView.swift",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Shortcuts/CarbonGlobalShortcutManager.swift",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Shortcuts/ShortcutRecorderView.swift",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Utilities/AppAppearance+SwiftUI.swift",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Utilities/ScreenPositioning.swift",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Utilities/SystemSettingsOpener.swift",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/DerivedSources/resource_bundle_accessor.swift",
+      "-I",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/Modules",
+      "-target",
+      "arm64-apple-macosx13.0",
+      "-whole-module-optimization",
+      "-num-threads",
+      "8",
+      "-serialize-diagnostics",
+      "-O",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_AVAILABLE",
+      "-module-cache-path",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/ModuleCache",
+      "-parseable-output",
+      "-Xfrontend",
+      "-entry-point-function-name",
+      "-Xfrontend",
+      "KondrehApp_main",
+      "-swift-version",
+      "5",
+      "-DDEVELOPMENT_LICENSE_PROVIDER",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "kondreh",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "KondrehCore" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "KondrehCore",
+      "-package-name",
+      "kondreh",
+      "-c",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Camera/CameraAuthorizationService.swift",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Camera/CameraDevice.swift",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Camera/CameraDeviceSelector.swift",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Camera/CameraPermissionState.swift",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Camera/CameraSessionError.swift",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Camera/CameraSessionState.swift",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Camera/PreviewLifecycleReducer.swift",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Licensing/LicenseProviding.swift",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Licensing/LicenseState.swift",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Licensing/LocalDevelopmentLicenseProvider.swift",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Services/LaunchAtLoginState.swift",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Services/LaunchAtLoginStatusMapper.swift",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Services/UpdateProviding.swift",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Settings/AppAppearance.swift",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Settings/PreviewAspectRatio.swift",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Settings/PreviewQuality.swift",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Settings/SettingsService.swift",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Shortcuts/GlobalShortcutManaging.swift",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Shortcuts/KeyboardShortcut.swift",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Utilities/AppConstants.swift",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Utilities/AppLogger.swift",
+      "-I",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/Modules",
+      "-target",
+      "arm64-apple-macosx13.0",
+      "-whole-module-optimization",
+      "-num-threads",
+      "8",
+      "-serialize-diagnostics",
+      "-O",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/include/KondrehCore-Swift.h",
+      "-swift-version",
+      "5",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "kondreh",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "KondrehCoreTests" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "KondrehCoreTests",
+      "-package-name",
+      "kondreh",
+      "-c",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Tests/KondrehCoreTests/CameraAuthorizationServiceTests.swift",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Tests/KondrehCoreTests/CameraDeviceSelectorTests.swift",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Tests/KondrehCoreTests/LaunchAtLoginStateTests.swift",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Tests/KondrehCoreTests/LicenseServiceTests.swift",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Tests/KondrehCoreTests/PreviewViewModelTests.swift",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Tests/KondrehCoreTests/SettingsServiceTests.swift",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Tests/KondrehCoreTests/ShortcutTests.swift",
+      "-I",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/Modules",
+      "-target",
+      "arm64-apple-macosx14.0",
+      "-whole-module-optimization",
+      "-num-threads",
+      "8",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/index/store",
+      "-O",
+      "-enable-testing",
+      "-Xfrontend",
+      "-enable-cross-import-overlays",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-swift-version",
+      "5",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "kondreh",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "KondrehPackageTests" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "KondrehPackageTests",
+      "-package-name",
+      "kondreh",
+      "-c",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehPackageTests.derived/runner.swift",
+      "-I",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/Modules",
+      "-target",
+      "arm64-apple-macosx13.0",
+      "-whole-module-optimization",
+      "-num-threads",
+      "8",
+      "-serialize-diagnostics",
+      "-O",
+      "-enable-testing",
+      "-Xfrontend",
+      "-enable-cross-import-overlays",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehPackageTests.build/include/KondrehPackageTests-Swift.h",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "kondreh",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "KondrehApp" : [
+      "KondrehCore"
+    ],
+    "KondrehCore" : [
+
+    ],
+    "KondrehCoreTests" : [
+      "KondrehCore"
+    ],
+    "KondrehPackageTests" : [
+      "KondrehCoreTests",
+      "KondrehCore"
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+    "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehPackageTests.derived/runner.swift" : {
+      "inputs" : [
+
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehPackageTests.derived/runner.swift"
+        }
+      ]
+    }
+  },
+  "traitConfiguration" : {
+    "default" : {
+
+    }
+  },
+  "writeCommands" : {
+    "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/Kondreh.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/AboutSettingsView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/AppAppearance+SwiftUI.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/AppCommands.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/AppDelegate.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/AppEnvironment.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/AppSettingsView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/AppearanceSettingsView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/CameraErrorView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/CameraManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/CameraPreviewRepresentable.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/CameraSettingsView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/CarbonGlobalShortcutManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/GeneralSettingsView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/KeyboardSettingsView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/KondrehApp.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/LaunchAtLoginService.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/MenuBarController.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/NoCameraView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/OnboardingPage.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/OnboardingView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/OnboardingWindowController.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/PermissionView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/PreviewControlsView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/PreviewPanelController.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/PreviewView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/PreviewViewModel.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/PrivacySettingsView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/PurchaseView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/ScreenPositioning.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/ShortcutRecorderView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/SystemSettingsOpener.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/resource_bundle_accessor.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/AppAppearance.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/AppConstants.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/AppLogger.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/CameraAuthorizationService.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/CameraDevice.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/CameraDeviceSelector.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/CameraPermissionState.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/CameraSessionError.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/CameraSessionState.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/GlobalShortcutManaging.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/KeyboardShortcut.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/LaunchAtLoginState.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/LaunchAtLoginStatusMapper.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/LicenseProviding.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/LicenseState.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/LocalDevelopmentLicenseProvider.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/PreviewAspectRatio.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/PreviewLifecycleReducer.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/PreviewQuality.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/SettingsService.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/UpdateProviding.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/Kondreh.product/Objects.LinkFileList"
+    },
+    "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/App/AppCommands.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/App/AppDelegate.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/App/AppEnvironment.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/App/KondrehApp.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Camera/CameraManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Camera/CameraPreviewRepresentable.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/MenuBar/MenuBarController.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/MenuBar/PreviewPanelController.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Onboarding/OnboardingPage.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Onboarding/OnboardingView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Onboarding/OnboardingWindowController.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Preview/CameraErrorView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Preview/NoCameraView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Preview/PermissionView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Preview/PreviewControlsView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Preview/PreviewView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Preview/PreviewViewModel.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Preview/PurchaseView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Services/LaunchAtLoginService.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Settings/AboutSettingsView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Settings/AppSettingsView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Settings/AppearanceSettingsView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Settings/CameraSettingsView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Settings/GeneralSettingsView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Settings/KeyboardSettingsView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Settings/PrivacySettingsView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Shortcuts/CarbonGlobalShortcutManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Shortcuts/ShortcutRecorderView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Utilities/AppAppearance+SwiftUI.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Utilities/ScreenPositioning.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehApp/Utilities/SystemSettingsOpener.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/DerivedSources/resource_bundle_accessor.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehApp.build/sources"
+    },
+    "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Camera/CameraAuthorizationService.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Camera/CameraDevice.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Camera/CameraDeviceSelector.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Camera/CameraPermissionState.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Camera/CameraSessionError.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Camera/CameraSessionState.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Camera/PreviewLifecycleReducer.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Licensing/LicenseProviding.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Licensing/LicenseState.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Licensing/LocalDevelopmentLicenseProvider.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Services/LaunchAtLoginState.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Services/LaunchAtLoginStatusMapper.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Services/UpdateProviding.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Settings/AppAppearance.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Settings/PreviewAspectRatio.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Settings/PreviewQuality.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Settings/SettingsService.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Shortcuts/GlobalShortcutManaging.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Shortcuts/KeyboardShortcut.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Utilities/AppConstants.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Sources/KondrehCore/Utilities/AppLogger.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/sources"
+    },
+    "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCoreTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Tests/KondrehCoreTests/CameraAuthorizationServiceTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Tests/KondrehCoreTests/CameraDeviceSelectorTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Tests/KondrehCoreTests/LaunchAtLoginStateTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Tests/KondrehCoreTests/LicenseServiceTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Tests/KondrehCoreTests/PreviewViewModelTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Tests/KondrehCoreTests/SettingsServiceTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Tests/KondrehCoreTests/ShortcutTests.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCoreTests.build/sources"
+    },
+    "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehPackageTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehPackageTests.derived/runner.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehPackageTests.build/sources"
+    },
+    "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehPackageTests.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/AppAppearance.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/AppConstants.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/AppLogger.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/CameraAuthorizationService.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/CameraDevice.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/CameraDeviceSelector.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/CameraPermissionState.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/CameraSessionError.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/CameraSessionState.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/GlobalShortcutManaging.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/KeyboardShortcut.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/LaunchAtLoginState.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/LaunchAtLoginStatusMapper.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/LicenseProviding.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/LicenseState.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/LocalDevelopmentLicenseProvider.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/PreviewAspectRatio.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/PreviewLifecycleReducer.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/PreviewQuality.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/SettingsService.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCore.build/UpdateProviding.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCoreTests.build/CameraAuthorizationServiceTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCoreTests.build/CameraDeviceSelectorTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCoreTests.build/LaunchAtLoginStateTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCoreTests.build/LicenseServiceTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCoreTests.build/PreviewViewModelTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCoreTests.build/SettingsServiceTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCoreTests.build/ShortcutTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehPackageTests.build/runner.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehPackageTests.product/Objects.LinkFileList"
+    },
+    "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/swift-version--58304C5D6DBC2206.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/swift-version--58304C5D6DBC2206.txt"
+    }
+  }
+}

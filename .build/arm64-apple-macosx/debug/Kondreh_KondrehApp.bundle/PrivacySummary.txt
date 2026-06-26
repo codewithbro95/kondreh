@@ -1,0 +1,1 @@
+Kondreh shows a local camera preview only. It does not record, save, upload, or transmit camera frames.

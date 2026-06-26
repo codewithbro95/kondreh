@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5C8255B2A348A103564FE8FE /* AppCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B2C91482351C415C6EC6ED /* AppCommands.swift */; };
+		1678E834DE84AB2CC4BFCC5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E7D464E0E5999464B5DED5 /* AppDelegate.swift */; };
+		AC4C8F3589E0A304D2DADBED /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07A8B6C8AD7D378F463895D /* AppEnvironment.swift */; };
+		9FF66D9574DA8734944E1C1D /* KondrehApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7A3838720009DDED052C5F /* KondrehApp.swift */; };
+		E2D234B968590AEC35695F59 /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB0C6D6F10405B0A72E5D17 /* CameraManager.swift */; };
+		62B991C187C09716B1584377 /* CameraPreviewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE99C6477BBFE0BC2EBFE22 /* CameraPreviewRepresentable.swift */; };
+		F8C2E551B884AC7B2DC1FB23 /* MenuBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644BADC4A2E3D9A87E4405CD /* MenuBarController.swift */; };
+		2DD5EECFD27DC05D207FC382 /* PreviewPanelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6B880ADAB409D382B4B1A2 /* PreviewPanelController.swift */; };
+		0125F067584367670F895F47 /* OnboardingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFAC3F54DDCBE75F9B56C60 /* OnboardingPage.swift */; };
+		0836C3D8CEE3E205D399A191 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A454D6BC0BFF1CC1DEEDDF /* OnboardingView.swift */; };
+		B0F4844A8963A88D69402BD9 /* OnboardingWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE53A0AEA3D8E2E3EEC450A /* OnboardingWindowController.swift */; };
+		F22F797408FE907C782048B4 /* CameraErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081505258D9F8FD54F394FE4 /* CameraErrorView.swift */; };
+		80D758715D96E3A098C5256F /* NoCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415FE8093F28140B71091BD3 /* NoCameraView.swift */; };
+		4EC56FE5BBF8CB51142DE0B5 /* PermissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FCEA3C38043A7F727E00C5 /* PermissionView.swift */; };
+		5CF223A163443D65B572715C /* PreviewControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3AAE778A0562F6AD22EC9B /* PreviewControlsView.swift */; };
+		61B4BBD9489FC8D9E9386F31 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9476FC7932E3F7406738C7AC /* PreviewView.swift */; };
+		7914F9C60FFCBCE8E490F703 /* PreviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7F484D803C6E3C1FE8810E /* PreviewViewModel.swift */; };
+		8FE2154EF2D1A02EAFFC05BD /* PurchaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1C0C2F7F28D7A9BC4DE2E8 /* PurchaseView.swift */; };
+		D24B8E68B61209E611875CF3 /* LaunchAtLoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAEDD26CD30F33A15341B07 /* LaunchAtLoginService.swift */; };
+		EB75370A9FCFE53D790494BE /* AboutSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3708DB350FFEDBAFE57DF8DD /* AboutSettingsView.swift */; };
+		646D0606FAF38F7BA8874FA5 /* AppSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6408A6321620182847236678 /* AppSettingsView.swift */; };
+		EECB1381D50DCAB4BFDD1319 /* AppearanceSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10423185D16B87C7FE0D5CCC /* AppearanceSettingsView.swift */; };
+		D93CD71040CD116E2E11B5B7 /* CameraSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6812062E39177C901C6A3BE1 /* CameraSettingsView.swift */; };
+		C840027F2E67666502DCA5FE /* GeneralSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEA71790DD4C6D049A23021 /* GeneralSettingsView.swift */; };
+		6F3B2C95D5A57A8B25268C12 /* KeyboardSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD1EDFCE18E3DE380DCDEF3 /* KeyboardSettingsView.swift */; };
+		8AEC2A9E766AEA0138668B6E /* PrivacySettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82A278A68FD5932650F7018 /* PrivacySettingsView.swift */; };
+		BD41867F8780142BB9FE81EF /* CarbonGlobalShortcutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A002C15C07B7E6830FF4C0DD /* CarbonGlobalShortcutManager.swift */; };
+		D2AFF5FFA6C33365667E158C /* ShortcutRecorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F030DE046414630517AF17E /* ShortcutRecorderView.swift */; };
+		A47BF2017E770FA6E524DF76 /* AppAppearance+SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D3BAF9EF0312F84BC0D1C4 /* AppAppearance+SwiftUI.swift */; };
+		19616A81E9EFC86E6926A760 /* ScreenPositioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767D77634976C3F2457D8AB6 /* ScreenPositioning.swift */; };
+		965B80DE3AE7D006947D60CF /* SystemSettingsOpener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6370560338A5BD2EF83C284A /* SystemSettingsOpener.swift */; };
+		EAF0724346E0A0DEB65B53BF /* CameraAuthorizationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C78123E16C42CF77CFBA092 /* CameraAuthorizationService.swift */; };
+		4876D9514F5D76E92C6469B6 /* CameraDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2838F3F436217F8B54BCF752 /* CameraDevice.swift */; };
+		2752697FD648B53FDA431E4A /* CameraDeviceSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D73903E0D21326DE48D2D03 /* CameraDeviceSelector.swift */; };
+		A63400FCDE9B858E17913B1D /* CameraPermissionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A639408EA59D2230D60E2F /* CameraPermissionState.swift */; };
+		DEB4C4F971859144DE5F99C9 /* CameraSessionError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAF04B024E6AFD8D607D090 /* CameraSessionError.swift */; };
+		F71CFAAE2F14CC6256CA775F /* CameraSessionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F457B5753E64CEA8E8E3973 /* CameraSessionState.swift */; };
+		3CC1429E9DEF93514734A250 /* PreviewLifecycleReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7557844002A1BAE38C27B07F /* PreviewLifecycleReducer.swift */; };
+		F10D03FE549F20C679281699 /* LicenseProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F76B8816EE1600EF32FCE2D /* LicenseProviding.swift */; };
+		83A2F9D66CB7C06FA6FB2688 /* LicenseState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012F873292C13E5186783AB2 /* LicenseState.swift */; };
+		74144C7AC065503D164638D8 /* LocalDevelopmentLicenseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F993A461A94431DAC75C66F1 /* LocalDevelopmentLicenseProvider.swift */; };
+		F98B2C174ECB48F25431907D /* LaunchAtLoginState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434E1B12A6585D12F5DE8C46 /* LaunchAtLoginState.swift */; };
+		E59A698E8D38555C73F6F5BE /* LaunchAtLoginStatusMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EC78DFC307ED34AE091AA9 /* LaunchAtLoginStatusMapper.swift */; };
+		844A222B51648E09537CF2F3 /* UpdateProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C165DB07D1CB96145DBFEC /* UpdateProviding.swift */; };
+		20571C71FEC587B8F917C09A /* AppAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E602E8CB98A1013170F8CD0 /* AppAppearance.swift */; };
+		A225F7184AEA5455E1C3A391 /* PreviewAspectRatio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2816CF1340E54C8DD6E21030 /* PreviewAspectRatio.swift */; };
+		0FE3AFC0DE3760DE4A55D870 /* PreviewQuality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465DE9D9B4CD89BC8238EA5E /* PreviewQuality.swift */; };
+		648E9110C002E6D1E275728A /* SettingsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405A8BD3B34AE7D554FFE102 /* SettingsService.swift */; };
+		63D3587490EDFE12F331F914 /* GlobalShortcutManaging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5B6927DC32C608E679EBFF /* GlobalShortcutManaging.swift */; };
+		9BE7F4D9BBD644233FCEE00C /* KeyboardShortcut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B7451B1E05758E221918A5 /* KeyboardShortcut.swift */; };
+		0C6C6B2D8626CF6A4F97C1F0 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A97E92C3E8C1566D9B9CFF6 /* AppConstants.swift */; };
+		D5FC007593FA4A678E17AE03 /* AppLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F2A2804214497F7A3BC90 /* AppLogger.swift */; };
+		A9F79631F3F1E24595ACAA35 /* PrivacySummary.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5D3DF6D47714B496BADF7E9E /* PrivacySummary.txt */; };
+		B92945EEA65E99C852274135 /* AppIcon.svg in Resources */ = {isa = PBXBuildFile; fileRef = E6676468818C3D55E787A8E7 /* AppIcon.svg */; };
+		EF610857E84AB45AA87EB94B /* libKondrehCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8F3C53A1CA4A133789F8C30 /* libKondrehCore.a */; };
+		3FED0AE3101F401D175F33C8 /* MenuBarIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 03DCE91E33341159A9B74E75 /* MenuBarIcon.png */; };
+		B53DAB4AA6CDC6C8B8060C85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DA99E5E3CE9D9A7FA47252E /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EA28F1B654DB8B824BA14F7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F3980ABD2BFD0762A51770C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C956E2C1FB956E9D783FF704;
+			remoteInfo = KondrehCore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		76B2C91482351C415C6EC6ED /* AppCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/KondrehApp/App/AppCommands.swift"; sourceTree = "<group>"; };
+		64E7D464E0E5999464B5DED5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/KondrehApp/App/AppDelegate.swift"; sourceTree = "<group>"; };
+		F07A8B6C8AD7D378F463895D /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/KondrehApp/App/AppEnvironment.swift"; sourceTree = "<group>"; };
+		9E7A3838720009DDED052C5F /* KondrehApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/KondrehApp/App/KondrehApp.swift"; sourceTree = "<group>"; };
+		FBB0C6D6F10405B0A72E5D17 /* CameraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/KondrehApp/Camera/CameraManager.swift"; sourceTree = "<group>"; };
+		FCE99C6477BBFE0BC2EBFE22 /* CameraPreviewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/KondrehApp/Camera/CameraPreviewRepresentable.swift"; sourceTree = "<group>"; };
+		644BADC4A2E3D9A87E4405CD /* MenuBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/KondrehApp/MenuBar/MenuBarController.swift"; sourceTree = "<group>"; };
+		CA6B880ADAB409D382B4B1A2 /* PreviewPanelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/KondrehApp/MenuBar/PreviewPanelController.swift"; sourceTree = "<group>"; };
+		8DFAC3F54DDCBE75F9B56C60 /* OnboardingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/KondrehApp/Onboarding/OnboardingPage.swift"; sourceTree = "<group>"; };
+		A9A454D6BC0BFF1CC1DEEDDF /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/KondrehApp/Onboarding/OnboardingView.swift"; sourceTree = "<group>"; };
+		3AE53A0AEA3D8E2E3EEC450A /* OnboardingWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/KondrehApp/Onboarding/OnboardingWindowController.swift"; sourceTree = "<group>"; };
+		081505258D9F8FD54F394FE4 /* CameraErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/KondrehApp/Preview/CameraErrorView.swift"; sourceTree = "<group>"; };
+		415FE8093F28140B71091BD3 /* NoCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/KondrehApp/Preview/NoCameraView.swift"; sourceTree = "<group>"; };
+		35FCEA3C38043A7F727E00C5 /* PermissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/KondrehApp/Preview/PermissionView.swift"; sourceTree = "<group>"; };
+		0D3AAE778A0562F6AD22EC9B /* PreviewControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/KondrehApp/Preview/PreviewControlsView.swift"; sourceTree = "<group>"; };
+		9476FC7932E3F7406738C7AC /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/KondrehApp/Preview/PreviewView.swift"; sourceTree = "<group>"; };
+		4D7F484D803C6E3C1FE8810E /* PreviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/KondrehApp/Preview/PreviewViewModel.swift"; sourceTree = "<group>"; };
+		BD1C0C2F7F28D7A9BC4DE2E8 /* PurchaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/KondrehApp/Preview/PurchaseView.swift"; sourceTree = "<group>"; };
+		9FAEDD26CD30F33A15341B07 /* LaunchAtLoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/KondrehApp/Services/LaunchAtLoginService.swift"; sourceTree = "<group>"; };
+		3708DB350FFEDBAFE57DF8DD /* AboutSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/KondrehApp/Settings/AboutSettingsView.swift"; sourceTree = "<group>"; };
+		6408A6321620182847236678 /* AppSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/KondrehApp/Settings/AppSettingsView.swift"; sourceTree = "<group>"; };
+		10423185D16B87C7FE0D5CCC /* AppearanceSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/KondrehApp/Settings/AppearanceSettingsView.swift"; sourceTree = "<group>"; };
+		6812062E39177C901C6A3BE1 /* CameraSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/KondrehApp/Settings/CameraSettingsView.swift"; sourceTree = "<group>"; };
+		7BEA71790DD4C6D049A23021 /* GeneralSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/KondrehApp/Settings/GeneralSettingsView.swift"; sourceTree = "<group>"; };
+		AAD1EDFCE18E3DE380DCDEF3 /* KeyboardSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/KondrehApp/Settings/KeyboardSettingsView.swift"; sourceTree = "<group>"; };
+		F82A278A68FD5932650F7018 /* PrivacySettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/KondrehApp/Settings/PrivacySettingsView.swift"; sourceTree = "<group>"; };
+		A002C15C07B7E6830FF4C0DD /* CarbonGlobalShortcutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/KondrehApp/Shortcuts/CarbonGlobalShortcutManager.swift"; sourceTree = "<group>"; };
+		4F030DE046414630517AF17E /* ShortcutRecorderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/KondrehApp/Shortcuts/ShortcutRecorderView.swift"; sourceTree = "<group>"; };
+		F9D3BAF9EF0312F84BC0D1C4 /* AppAppearance+SwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/KondrehApp/Utilities/AppAppearance+SwiftUI.swift"; sourceTree = "<group>"; };
+		767D77634976C3F2457D8AB6 /* ScreenPositioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/KondrehApp/Utilities/ScreenPositioning.swift"; sourceTree = "<group>"; };
+		6370560338A5BD2EF83C284A /* SystemSettingsOpener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/KondrehApp/Utilities/SystemSettingsOpener.swift"; sourceTree = "<group>"; };
+		4C78123E16C42CF77CFBA092 /* CameraAuthorizationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/KondrehCore/Camera/CameraAuthorizationService.swift"; sourceTree = "<group>"; };
+		2838F3F436217F8B54BCF752 /* CameraDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/KondrehCore/Camera/CameraDevice.swift"; sourceTree = "<group>"; };
+		6D73903E0D21326DE48D2D03 /* CameraDeviceSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/KondrehCore/Camera/CameraDeviceSelector.swift"; sourceTree = "<group>"; };
+		30A639408EA59D2230D60E2F /* CameraPermissionState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/KondrehCore/Camera/CameraPermissionState.swift"; sourceTree = "<group>"; };
+		BEAF04B024E6AFD8D607D090 /* CameraSessionError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/KondrehCore/Camera/CameraSessionError.swift"; sourceTree = "<group>"; };
+		9F457B5753E64CEA8E8E3973 /* CameraSessionState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/KondrehCore/Camera/CameraSessionState.swift"; sourceTree = "<group>"; };
+		7557844002A1BAE38C27B07F /* PreviewLifecycleReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/KondrehCore/Camera/PreviewLifecycleReducer.swift"; sourceTree = "<group>"; };
+		3F76B8816EE1600EF32FCE2D /* LicenseProviding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/KondrehCore/Licensing/LicenseProviding.swift"; sourceTree = "<group>"; };
+		012F873292C13E5186783AB2 /* LicenseState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/KondrehCore/Licensing/LicenseState.swift"; sourceTree = "<group>"; };
+		F993A461A94431DAC75C66F1 /* LocalDevelopmentLicenseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/KondrehCore/Licensing/LocalDevelopmentLicenseProvider.swift"; sourceTree = "<group>"; };
+		434E1B12A6585D12F5DE8C46 /* LaunchAtLoginState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/KondrehCore/Services/LaunchAtLoginState.swift"; sourceTree = "<group>"; };
+		27EC78DFC307ED34AE091AA9 /* LaunchAtLoginStatusMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/KondrehCore/Services/LaunchAtLoginStatusMapper.swift"; sourceTree = "<group>"; };
+		78C165DB07D1CB96145DBFEC /* UpdateProviding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/KondrehCore/Services/UpdateProviding.swift"; sourceTree = "<group>"; };
+		4E602E8CB98A1013170F8CD0 /* AppAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/KondrehCore/Settings/AppAppearance.swift"; sourceTree = "<group>"; };
+		2816CF1340E54C8DD6E21030 /* PreviewAspectRatio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/KondrehCore/Settings/PreviewAspectRatio.swift"; sourceTree = "<group>"; };
+		465DE9D9B4CD89BC8238EA5E /* PreviewQuality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/KondrehCore/Settings/PreviewQuality.swift"; sourceTree = "<group>"; };
+		405A8BD3B34AE7D554FFE102 /* SettingsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/KondrehCore/Settings/SettingsService.swift"; sourceTree = "<group>"; };
+		3A5B6927DC32C608E679EBFF /* GlobalShortcutManaging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/KondrehCore/Shortcuts/GlobalShortcutManaging.swift"; sourceTree = "<group>"; };
+		40B7451B1E05758E221918A5 /* KeyboardShortcut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/KondrehCore/Shortcuts/KeyboardShortcut.swift"; sourceTree = "<group>"; };
+		3A97E92C3E8C1566D9B9CFF6 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/KondrehCore/Utilities/AppConstants.swift"; sourceTree = "<group>"; };
+		046F2A2804214497F7A3BC90 /* AppLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/KondrehCore/Utilities/AppLogger.swift"; sourceTree = "<group>"; };
+		5D3DF6D47714B496BADF7E9E /* PrivacySummary.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Sources/KondrehApp/Resources/PrivacySummary.txt"; sourceTree = "<group>"; };
+		E6676468818C3D55E787A8E7 /* AppIcon.svg */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Design/AppIcon.svg"; sourceTree = "<group>"; };
+		2CC498B823A9DE649F415218 /* Kondreh-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Supporting/Kondreh-Info.plist"; sourceTree = "<group>"; };
+		E54E7428A154BA272432EC2F /* Kondreh.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Supporting/Kondreh.entitlements"; sourceTree = "<group>"; };
+		F7DB1ADD3125CE9A20C445DE /* Kondreh-Direct.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Supporting/Kondreh-Direct.entitlements"; sourceTree = "<group>"; };
+		BCFA14070C8F570C520EF850 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Package.swift"; sourceTree = "<group>"; };
+		3AF63ED68D6BF05153BBFE42 /* Kondreh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kondreh.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8F3C53A1CA4A133789F8C30 /* libKondrehCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKondrehCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		03DCE91E33341159A9B74E75 /* MenuBarIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sources/KondrehApp/Resources/MenuBarIcon.png"; sourceTree = "<group>"; };
+		8DA99E5E3CE9D9A7FA47252E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Sources/KondrehApp/Resources/Assets.xcassets"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		178AFF54238B3FBE9489971F /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (
+			EF610857E84AB45AA87EB94B /* libKondrehCore.a in Frameworks */,
+		); runOnlyForDeploymentPostprocessing = 0; };
+		412C9A68B965265B255BF7DB /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = ( ); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		931BAC40E0989DC841B8C1D2 = {isa = PBXGroup; children = (
+			A9012353AFD6A66EB75D4BE2 /* Sources */,
+			1B84F6CB2A6DAAAC44DC5A0C /* Supporting */,
+			3A585FA15D66223CDC83266F /* Design */,
+			BCFA14070C8F570C520EF850 /* Package.swift */,
+			5151B46607EBC8890D8DFCC2 /* Products */,
+		); sourceTree = "<group>"; };
+		5151B46607EBC8890D8DFCC2 /* Products */ = {isa = PBXGroup; children = (
+			3AF63ED68D6BF05153BBFE42 /* Kondreh.app */,
+			B8F3C53A1CA4A133789F8C30 /* libKondrehCore.a */,
+		); name = Products; sourceTree = "<group>"; };
+		A9012353AFD6A66EB75D4BE2 /* Sources */ = {isa = PBXGroup; children = (
+			76B2C91482351C415C6EC6ED /* AppCommands.swift */,
+			64E7D464E0E5999464B5DED5 /* AppDelegate.swift */,
+			F07A8B6C8AD7D378F463895D /* AppEnvironment.swift */,
+			9E7A3838720009DDED052C5F /* KondrehApp.swift */,
+			FBB0C6D6F10405B0A72E5D17 /* CameraManager.swift */,
+			FCE99C6477BBFE0BC2EBFE22 /* CameraPreviewRepresentable.swift */,
+			644BADC4A2E3D9A87E4405CD /* MenuBarController.swift */,
+			CA6B880ADAB409D382B4B1A2 /* PreviewPanelController.swift */,
+			8DFAC3F54DDCBE75F9B56C60 /* OnboardingPage.swift */,
+			A9A454D6BC0BFF1CC1DEEDDF /* OnboardingView.swift */,
+			3AE53A0AEA3D8E2E3EEC450A /* OnboardingWindowController.swift */,
+			081505258D9F8FD54F394FE4 /* CameraErrorView.swift */,
+			415FE8093F28140B71091BD3 /* NoCameraView.swift */,
+			35FCEA3C38043A7F727E00C5 /* PermissionView.swift */,
+			0D3AAE778A0562F6AD22EC9B /* PreviewControlsView.swift */,
+			9476FC7932E3F7406738C7AC /* PreviewView.swift */,
+			4D7F484D803C6E3C1FE8810E /* PreviewViewModel.swift */,
+			BD1C0C2F7F28D7A9BC4DE2E8 /* PurchaseView.swift */,
+			9FAEDD26CD30F33A15341B07 /* LaunchAtLoginService.swift */,
+			3708DB350FFEDBAFE57DF8DD /* AboutSettingsView.swift */,
+			6408A6321620182847236678 /* AppSettingsView.swift */,
+			10423185D16B87C7FE0D5CCC /* AppearanceSettingsView.swift */,
+			6812062E39177C901C6A3BE1 /* CameraSettingsView.swift */,
+			7BEA71790DD4C6D049A23021 /* GeneralSettingsView.swift */,
+			AAD1EDFCE18E3DE380DCDEF3 /* KeyboardSettingsView.swift */,
+			F82A278A68FD5932650F7018 /* PrivacySettingsView.swift */,
+			A002C15C07B7E6830FF4C0DD /* CarbonGlobalShortcutManager.swift */,
+			4F030DE046414630517AF17E /* ShortcutRecorderView.swift */,
+			F9D3BAF9EF0312F84BC0D1C4 /* AppAppearance+SwiftUI.swift */,
+			767D77634976C3F2457D8AB6 /* ScreenPositioning.swift */,
+			6370560338A5BD2EF83C284A /* SystemSettingsOpener.swift */,
+			4C78123E16C42CF77CFBA092 /* CameraAuthorizationService.swift */,
+			2838F3F436217F8B54BCF752 /* CameraDevice.swift */,
+			6D73903E0D21326DE48D2D03 /* CameraDeviceSelector.swift */,
+			30A639408EA59D2230D60E2F /* CameraPermissionState.swift */,
+			BEAF04B024E6AFD8D607D090 /* CameraSessionError.swift */,
+			9F457B5753E64CEA8E8E3973 /* CameraSessionState.swift */,
+			7557844002A1BAE38C27B07F /* PreviewLifecycleReducer.swift */,
+			3F76B8816EE1600EF32FCE2D /* LicenseProviding.swift */,
+			012F873292C13E5186783AB2 /* LicenseState.swift */,
+			F993A461A94431DAC75C66F1 /* LocalDevelopmentLicenseProvider.swift */,
+			434E1B12A6585D12F5DE8C46 /* LaunchAtLoginState.swift */,
+			27EC78DFC307ED34AE091AA9 /* LaunchAtLoginStatusMapper.swift */,
+			78C165DB07D1CB96145DBFEC /* UpdateProviding.swift */,
+			4E602E8CB98A1013170F8CD0 /* AppAppearance.swift */,
+			2816CF1340E54C8DD6E21030 /* PreviewAspectRatio.swift */,
+			465DE9D9B4CD89BC8238EA5E /* PreviewQuality.swift */,
+			405A8BD3B34AE7D554FFE102 /* SettingsService.swift */,
+			3A5B6927DC32C608E679EBFF /* GlobalShortcutManaging.swift */,
+			40B7451B1E05758E221918A5 /* KeyboardShortcut.swift */,
+			3A97E92C3E8C1566D9B9CFF6 /* AppConstants.swift */,
+			046F2A2804214497F7A3BC90 /* AppLogger.swift */,
+		); name = Sources; sourceTree = "<group>"; };
+		1B84F6CB2A6DAAAC44DC5A0C /* Supporting */ = {isa = PBXGroup; children = (
+			2CC498B823A9DE649F415218 /* Kondreh-Info.plist */,
+			E54E7428A154BA272432EC2F /* Kondreh.entitlements */,
+			F7DB1ADD3125CE9A20C445DE /* Kondreh-Direct.entitlements */,
+		); name = Supporting; sourceTree = "<group>"; };
+		3A585FA15D66223CDC83266F /* Design */ = {isa = PBXGroup; children = (
+			E6676468818C3D55E787A8E7 /* AppIcon.svg */,
+			8DA99E5E3CE9D9A7FA47252E /* Assets.xcassets */,
+			03DCE91E33341159A9B74E75 /* MenuBarIcon.png */,
+		); name = Design; sourceTree = "<group>"; };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E572DEE80EDEF2B40C710129 /* Kondreh */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6042D49D180D7DC4323F8E7 /* Build configuration list for PBXNativeTarget "Kondreh" */;
+			buildPhases = (
+				A55C33DCCEE14E038C8C54BF /* Sources */,
+				178AFF54238B3FBE9489971F /* Frameworks */,
+				332E0DF281E02DED63FD831D /* Resources */,
+			);
+			buildRules = ( );
+			dependencies = (
+				84AE15FD6DF08AF49443CEF6,
+			);
+			name = Kondreh;
+			productReference = 3AF63ED68D6BF05153BBFE42 /* Kondreh.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C956E2C1FB956E9D783FF704 /* KondrehCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00E538B3690D93EE323819DB /* Build configuration list for PBXNativeTarget "KondrehCore" */;
+			buildPhases = (
+				49A38BB2E6EF722BD16FBE35 /* Sources */,
+				412C9A68B965265B255BF7DB /* Frameworks */,
+			);
+			buildRules = ( );
+			dependencies = ( );
+			name = KondrehCore;
+			productReference = B8F3C53A1CA4A133789F8C30 /* libKondrehCore.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8F3980ABD2BFD0762A51770C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2650;
+				LastUpgradeCheck = 2650;
+				TargetAttributes = {
+					E572DEE80EDEF2B40C710129 = { CreatedOnToolsVersion = 26.5; };
+					C956E2C1FB956E9D783FF704 = { CreatedOnToolsVersion = 26.5; };
+				};
+			};
+			buildConfigurationList = 84BBAC37BE387BB883EA01D5 /* Build configuration list for PBXProject "Kondreh" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = ( en, Base, );
+			mainGroup = 931BAC40E0989DC841B8C1D2;
+			productRefGroup = 5151B46607EBC8890D8DFCC2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E572DEE80EDEF2B40C710129 /* Kondreh */,
+				C956E2C1FB956E9D783FF704 /* KondrehCore */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		332E0DF281E02DED63FD831D /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (
+			A9F79631F3F1E24595ACAA35 /* PrivacySummary.txt in Resources */,
+			B92945EEA65E99C852274135 /* AppIcon.svg in Resources */,
+			B53DAB4AA6CDC6C8B8060C85 /* Assets.xcassets in Resources */,
+			3FED0AE3101F401D175F33C8 /* MenuBarIcon.png in Resources */,
+		); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A55C33DCCEE14E038C8C54BF /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (
+			5C8255B2A348A103564FE8FE /* AppCommands.swift in Sources */,
+			1678E834DE84AB2CC4BFCC5C /* AppDelegate.swift in Sources */,
+			AC4C8F3589E0A304D2DADBED /* AppEnvironment.swift in Sources */,
+			9FF66D9574DA8734944E1C1D /* KondrehApp.swift in Sources */,
+			E2D234B968590AEC35695F59 /* CameraManager.swift in Sources */,
+			62B991C187C09716B1584377 /* CameraPreviewRepresentable.swift in Sources */,
+			F8C2E551B884AC7B2DC1FB23 /* MenuBarController.swift in Sources */,
+			2DD5EECFD27DC05D207FC382 /* PreviewPanelController.swift in Sources */,
+			0125F067584367670F895F47 /* OnboardingPage.swift in Sources */,
+			0836C3D8CEE3E205D399A191 /* OnboardingView.swift in Sources */,
+			B0F4844A8963A88D69402BD9 /* OnboardingWindowController.swift in Sources */,
+			F22F797408FE907C782048B4 /* CameraErrorView.swift in Sources */,
+			80D758715D96E3A098C5256F /* NoCameraView.swift in Sources */,
+			4EC56FE5BBF8CB51142DE0B5 /* PermissionView.swift in Sources */,
+			5CF223A163443D65B572715C /* PreviewControlsView.swift in Sources */,
+			61B4BBD9489FC8D9E9386F31 /* PreviewView.swift in Sources */,
+			7914F9C60FFCBCE8E490F703 /* PreviewViewModel.swift in Sources */,
+			8FE2154EF2D1A02EAFFC05BD /* PurchaseView.swift in Sources */,
+			D24B8E68B61209E611875CF3 /* LaunchAtLoginService.swift in Sources */,
+			EB75370A9FCFE53D790494BE /* AboutSettingsView.swift in Sources */,
+			646D0606FAF38F7BA8874FA5 /* AppSettingsView.swift in Sources */,
+			EECB1381D50DCAB4BFDD1319 /* AppearanceSettingsView.swift in Sources */,
+			D93CD71040CD116E2E11B5B7 /* CameraSettingsView.swift in Sources */,
+			C840027F2E67666502DCA5FE /* GeneralSettingsView.swift in Sources */,
+			6F3B2C95D5A57A8B25268C12 /* KeyboardSettingsView.swift in Sources */,
+			8AEC2A9E766AEA0138668B6E /* PrivacySettingsView.swift in Sources */,
+			BD41867F8780142BB9FE81EF /* CarbonGlobalShortcutManager.swift in Sources */,
+			D2AFF5FFA6C33365667E158C /* ShortcutRecorderView.swift in Sources */,
+			A47BF2017E770FA6E524DF76 /* AppAppearance+SwiftUI.swift in Sources */,
+			19616A81E9EFC86E6926A760 /* ScreenPositioning.swift in Sources */,
+			965B80DE3AE7D006947D60CF /* SystemSettingsOpener.swift in Sources */,
+		); runOnlyForDeploymentPostprocessing = 0; };
+		49A38BB2E6EF722BD16FBE35 /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (
+			EAF0724346E0A0DEB65B53BF /* CameraAuthorizationService.swift in Sources */,
+			4876D9514F5D76E92C6469B6 /* CameraDevice.swift in Sources */,
+			2752697FD648B53FDA431E4A /* CameraDeviceSelector.swift in Sources */,
+			A63400FCDE9B858E17913B1D /* CameraPermissionState.swift in Sources */,
+			DEB4C4F971859144DE5F99C9 /* CameraSessionError.swift in Sources */,
+			F71CFAAE2F14CC6256CA775F /* CameraSessionState.swift in Sources */,
+			3CC1429E9DEF93514734A250 /* PreviewLifecycleReducer.swift in Sources */,
+			F10D03FE549F20C679281699 /* LicenseProviding.swift in Sources */,
+			83A2F9D66CB7C06FA6FB2688 /* LicenseState.swift in Sources */,
+			74144C7AC065503D164638D8 /* LocalDevelopmentLicenseProvider.swift in Sources */,
+			F98B2C174ECB48F25431907D /* LaunchAtLoginState.swift in Sources */,
+			E59A698E8D38555C73F6F5BE /* LaunchAtLoginStatusMapper.swift in Sources */,
+			844A222B51648E09537CF2F3 /* UpdateProviding.swift in Sources */,
+			20571C71FEC587B8F917C09A /* AppAppearance.swift in Sources */,
+			A225F7184AEA5455E1C3A391 /* PreviewAspectRatio.swift in Sources */,
+			0FE3AFC0DE3760DE4A55D870 /* PreviewQuality.swift in Sources */,
+			648E9110C002E6D1E275728A /* SettingsService.swift in Sources */,
+			63D3587490EDFE12F331F914 /* GlobalShortcutManaging.swift in Sources */,
+			9BE7F4D9BBD644233FCEE00C /* KeyboardShortcut.swift in Sources */,
+			0C6C6B2D8626CF6A4F97C1F0 /* AppConstants.swift in Sources */,
+			D5FC007593FA4A678E17AE03 /* AppLogger.swift in Sources */,
+		); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84AE15FD6DF08AF49443CEF6 /* PBXTargetDependency */ = {isa = PBXTargetDependency; target = C956E2C1FB956E9D783FF704 /* KondrehCore */; targetProxy = EA28F1B654DB8B824BA14F7C /* PBXContainerItemProxy */; };
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DAAE278CA2E2D8BE7D22D5B1 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {
+			ALWAYS_SEARCH_USER_PATHS = NO;
+			CLANG_ANALYZER_NONNULL = YES;
+			CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+			CLANG_ENABLE_MODULES = YES;
+			CLANG_ENABLE_OBJC_ARC = YES;
+			CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+			COPY_PHASE_STRIP = NO;
+			DEBUG_INFORMATION_FORMAT = dwarf;
+			ENABLE_STRICT_OBJC_MSGSEND = YES;
+			GCC_C_LANGUAGE_STANDARD = gnu17;
+			MACOSX_DEPLOYMENT_TARGET = 13.0;
+			SDKROOT = macosx;
+			SWIFT_VERSION = 5.0;
+		}; name = Debug; };
+		83DA2C6E8A0527CBD4140574 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {
+			ALWAYS_SEARCH_USER_PATHS = NO;
+			CLANG_ANALYZER_NONNULL = YES;
+			CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+			CLANG_ENABLE_MODULES = YES;
+			CLANG_ENABLE_OBJC_ARC = YES;
+			CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+			COPY_PHASE_STRIP = YES;
+			DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+			ENABLE_STRICT_OBJC_MSGSEND = YES;
+			GCC_C_LANGUAGE_STANDARD = gnu17;
+			MACOSX_DEPLOYMENT_TARGET = 13.0;
+			SDKROOT = macosx;
+			SWIFT_VERSION = 5.0;
+		}; name = Release; };
+		B1B2A1AB16CA5C6BE65591EF /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {
+			CODE_SIGN_STYLE = Automatic;
+			ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+			CODE_SIGN_ENTITLEMENTS = "Supporting/Kondreh.entitlements";
+			COMBINE_HIDPI_IMAGES = YES;
+			CURRENT_PROJECT_VERSION = 1;
+			ENABLE_HARDENED_RUNTIME = YES;
+			GENERATE_INFOPLIST_FILE = NO;
+			INFOPLIST_FILE = "Supporting/Kondreh-Info.plist";
+			LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+			MARKETING_VERSION = 1.0.0;
+			PRODUCT_BUNDLE_IDENTIFIER = com.codewithbro.kondreh;
+			PRODUCT_NAME = Kondreh;
+			MACOSX_DEPLOYMENT_TARGET = 13.0;
+			SDKROOT = macosx;
+			SUPPORTED_PLATFORMS = macosx;
+			SWIFT_VERSION = 5.0;
+		}; name = Debug; };
+		715F28BA8C054910A2BE5EC7 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {
+			CODE_SIGN_STYLE = Automatic;
+			ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+			CODE_SIGN_ENTITLEMENTS = "Supporting/Kondreh.entitlements";
+			COMBINE_HIDPI_IMAGES = YES;
+			CURRENT_PROJECT_VERSION = 1;
+			ENABLE_HARDENED_RUNTIME = YES;
+			GENERATE_INFOPLIST_FILE = NO;
+			INFOPLIST_FILE = "Supporting/Kondreh-Info.plist";
+			LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+			MARKETING_VERSION = 1.0.0;
+			PRODUCT_BUNDLE_IDENTIFIER = com.codewithbro.kondreh;
+			PRODUCT_NAME = Kondreh;
+			MACOSX_DEPLOYMENT_TARGET = 13.0;
+			SDKROOT = macosx;
+			SUPPORTED_PLATFORMS = macosx;
+			SWIFT_VERSION = 5.0;
+		}; name = Release; };
+		F8C626301E26DF418DB7D30F /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {
+			CODE_SIGN_STYLE = Automatic;
+			DEFINES_MODULE = YES;
+			MACH_O_TYPE = staticlib;
+			PRODUCT_BUNDLE_IDENTIFIER = com.codewithbro.kondreh.core;
+			PRODUCT_NAME = KondrehCore;
+			SKIP_INSTALL = YES;
+			MACOSX_DEPLOYMENT_TARGET = 13.0;
+			SDKROOT = macosx;
+			SUPPORTED_PLATFORMS = macosx;
+			SWIFT_VERSION = 5.0;
+		}; name = Debug; };
+		76429AC0E6E2CE391E8B6847 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {
+			CODE_SIGN_STYLE = Automatic;
+			DEFINES_MODULE = YES;
+			MACH_O_TYPE = staticlib;
+			PRODUCT_BUNDLE_IDENTIFIER = com.codewithbro.kondreh.core;
+			PRODUCT_NAME = KondrehCore;
+			SKIP_INSTALL = YES;
+			MACOSX_DEPLOYMENT_TARGET = 13.0;
+			SDKROOT = macosx;
+			SUPPORTED_PLATFORMS = macosx;
+			SWIFT_VERSION = 5.0;
+		}; name = Release; };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84BBAC37BE387BB883EA01D5 /* Build configuration list for Project */ = {isa = XCConfigurationList; buildConfigurations = (
+			DAAE278CA2E2D8BE7D22D5B1 /* Debug */,
+			83DA2C6E8A0527CBD4140574 /* Release */,
+		); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		D6042D49D180D7DC4323F8E7 /* Build configuration list for Kondreh */ = {isa = XCConfigurationList; buildConfigurations = (
+			B1B2A1AB16CA5C6BE65591EF /* Debug */,
+			715F28BA8C054910A2BE5EC7 /* Release */,
+		); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		00E538B3690D93EE323819DB /* Build configuration list for KondrehCore */ = {isa = XCConfigurationList; buildConfigurations = (
+			F8C626301E26DF418DB7D30F /* Debug */,
+			76429AC0E6E2CE391E8B6847 /* Release */,
+		); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+/* End XCConfigurationList section */
+
+	};
+	rootObject = 8F3980ABD2BFD0762A51770C /* Project object */;
+}

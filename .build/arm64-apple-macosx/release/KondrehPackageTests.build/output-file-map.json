@@ -1,0 +1,13 @@
+{
+  "": {
+    "dependencies": "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehPackageTests.build/KondrehPackageTests.d",
+    "object": "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehPackageTests.build/KondrehPackageTests.o",
+    "swift-dependencies": "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehPackageTests.build/primary.swiftdeps"
+  },
+  "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehPackageTests.derived/runner.swift": {
+    "object": "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehPackageTests.build/runner.swift.o",
+    "swiftmodule": "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehPackageTests.build/runner~partial.swiftmodule",
+    "swift-dependencies": "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehPackageTests.build/runner.swiftdeps",
+    "diagnostics": "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehPackageTests.build/runner.dia"
+  }
+}

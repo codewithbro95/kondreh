@@ -1,0 +1,49 @@
+{
+  "": {
+    "dependencies": "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCoreTests.build/KondrehCoreTests.d",
+    "object": "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCoreTests.build/KondrehCoreTests.o",
+    "swift-dependencies": "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCoreTests.build/primary.swiftdeps"
+  },
+  "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Tests/KondrehCoreTests/CameraAuthorizationServiceTests.swift": {
+    "object": "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCoreTests.build/CameraAuthorizationServiceTests.swift.o",
+    "swiftmodule": "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCoreTests.build/CameraAuthorizationServiceTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCoreTests.build/CameraAuthorizationServiceTests.swiftdeps",
+    "diagnostics": "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCoreTests.build/CameraAuthorizationServiceTests.dia"
+  },
+  "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Tests/KondrehCoreTests/CameraDeviceSelectorTests.swift": {
+    "object": "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCoreTests.build/CameraDeviceSelectorTests.swift.o",
+    "swiftmodule": "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCoreTests.build/CameraDeviceSelectorTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCoreTests.build/CameraDeviceSelectorTests.swiftdeps",
+    "diagnostics": "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCoreTests.build/CameraDeviceSelectorTests.dia"
+  },
+  "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Tests/KondrehCoreTests/LaunchAtLoginStateTests.swift": {
+    "object": "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCoreTests.build/LaunchAtLoginStateTests.swift.o",
+    "swiftmodule": "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCoreTests.build/LaunchAtLoginStateTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCoreTests.build/LaunchAtLoginStateTests.swiftdeps",
+    "diagnostics": "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCoreTests.build/LaunchAtLoginStateTests.dia"
+  },
+  "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Tests/KondrehCoreTests/LicenseServiceTests.swift": {
+    "object": "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCoreTests.build/LicenseServiceTests.swift.o",
+    "swiftmodule": "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCoreTests.build/LicenseServiceTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCoreTests.build/LicenseServiceTests.swiftdeps",
+    "diagnostics": "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCoreTests.build/LicenseServiceTests.dia"
+  },
+  "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Tests/KondrehCoreTests/PreviewViewModelTests.swift": {
+    "object": "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCoreTests.build/PreviewViewModelTests.swift.o",
+    "swiftmodule": "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCoreTests.build/PreviewViewModelTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCoreTests.build/PreviewViewModelTests.swiftdeps",
+    "diagnostics": "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCoreTests.build/PreviewViewModelTests.dia"
+  },
+  "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Tests/KondrehCoreTests/SettingsServiceTests.swift": {
+    "object": "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCoreTests.build/SettingsServiceTests.swift.o",
+    "swiftmodule": "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCoreTests.build/SettingsServiceTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCoreTests.build/SettingsServiceTests.swiftdeps",
+    "diagnostics": "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCoreTests.build/SettingsServiceTests.dia"
+  },
+  "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/Tests/KondrehCoreTests/ShortcutTests.swift": {
+    "object": "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCoreTests.build/ShortcutTests.swift.o",
+    "swiftmodule": "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCoreTests.build/ShortcutTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCoreTests.build/ShortcutTests.swiftdeps",
+    "diagnostics": "/Users/fotiem.constant/Desktop/codewithbro/labs/factory/Kondreh/.build/arm64-apple-macosx/release/KondrehCoreTests.build/ShortcutTests.dia"
+  }
+}
