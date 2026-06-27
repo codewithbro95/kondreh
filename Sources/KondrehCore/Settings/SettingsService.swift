@@ -34,20 +34,6 @@ public enum MenuBarIconStyle: String, CaseIterable, Codable, Identifiable {
     }
 }
 
-public enum PreviewWindowMode: String, CaseIterable, Codable, Identifiable {
-    case popover
-    case floatingWindow
-
-    public var id: String { rawValue }
-
-    public var displayName: String {
-        switch self {
-        case .popover: "Menu Popover"
-        case .floatingWindow: "Floating Window"
-        }
-    }
-}
-
 public enum WindowMaskStyle: String, CaseIterable, Codable, Identifiable {
     case rounded
     case square
@@ -119,7 +105,6 @@ public final class SettingsService: ObservableObject {
         static let onboardingCompleted = "onboardingCompleted"
         static let panelWidth = "panelWidth"
         static let panelHeight = "panelHeight"
-        static let previewWindowMode = "previewWindowMode"
         static let lockAspectRatio = "lockAspectRatio"
         static let manualWindowPosition = "manualWindowPosition"
         static let windowMaskStyle = "windowMaskStyle"
@@ -255,11 +240,6 @@ public final class SettingsService: ObservableObject {
         }
     }
 
-    public var previewWindowMode: PreviewWindowMode {
-        get { enumValue(for: Key.previewWindowMode, default: .popover) }
-        set { setEnum(newValue, for: Key.previewWindowMode) }
-    }
-
     public var lockAspectRatio: Bool {
         get { defaults.bool(forKey: Key.lockAspectRatio) }
         set { set(newValue, for: Key.lockAspectRatio) }
@@ -338,7 +318,6 @@ public final class SettingsService: ObservableObject {
             Key.onboardingCompleted: false,
             Key.panelWidth: AppConstants.defaultPanelWidth,
             Key.panelHeight: AppConstants.defaultPanelHeight,
-            Key.previewWindowMode: PreviewWindowMode.popover.rawValue,
             Key.lockAspectRatio: false,
             Key.manualWindowPosition: false,
             Key.windowMaskStyle: WindowMaskStyle.rounded.rawValue,

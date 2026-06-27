@@ -16,7 +16,6 @@ struct GeneralSettingsView: View {
         Form {
             Toggle("Launch \(AppConstants.appName) at login", isOn: launchAtLoginBinding)
             LabeledContent("Launch status", value: launchAtLogin.state.displayName)
-            Toggle("Show menu-bar icon", isOn: $settings.showMenuBarIcon)
             Toggle("Reopen the last selected camera", isOn: $settings.reopenLastSelectedCamera)
             Toggle("Always on top by default", isOn: $settings.alwaysOnTop)
 

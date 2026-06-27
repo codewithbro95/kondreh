@@ -5,7 +5,7 @@ import SwiftUI
 enum AppSettingsSection: String, CaseIterable, Identifiable {
     case general
     case about
-    case floatingWindow
+    case previewWindow
     case frameShape
     case notchShortcut
     case audioPulse
@@ -16,7 +16,7 @@ enum AppSettingsSection: String, CaseIterable, Identifiable {
 
     static let primarySections: [AppSettingsSection] = [.general, .about]
     static let featureSections: [AppSettingsSection] = [
-        .floatingWindow,
+        .previewWindow,
         .frameShape,
         .notchShortcut,
         .audioPulse,
@@ -28,7 +28,7 @@ enum AppSettingsSection: String, CaseIterable, Identifiable {
         switch self {
         case .general: "General"
         case .about: "About"
-        case .floatingWindow: "Floating Window"
+        case .previewWindow: "Preview Window"
         case .frameShape: "Frame Shape"
         case .notchShortcut: "Notch Shortcut"
         case .audioPulse: "Audio Pulse"
@@ -41,7 +41,7 @@ enum AppSettingsSection: String, CaseIterable, Identifiable {
         switch self {
         case .general: "gearshape"
         case .about: "info.circle"
-        case .floatingWindow: "macwindow"
+        case .previewWindow: "macwindow"
         case .frameShape: "viewfinder"
         case .notchShortcut: "laptopcomputer"
         case .audioPulse: "waveform"
@@ -75,7 +75,7 @@ struct AppSettingsView: View {
     }
 
     var body: some View {
-        NavigationSplitView {
+        HStack(spacing: 0) {
             List(selection: selectionBinding) {
                 Section {
                     ForEach(AppSettingsSection.primarySections) { section in
@@ -92,11 +92,10 @@ struct AppSettingsView: View {
                 }
             }
             .listStyle(.sidebar)
-            .navigationSplitViewColumnWidth(min: 190, ideal: 220, max: 260)
-            .safeAreaInset(edge: .top) {
-                Color.clear.frame(height: 18)
-            }
-        } detail: {
+            .frame(width: 220)
+
+            Divider()
+
             VStack(spacing: 0) {
                 ScrollView {
                     VStack(alignment: .leading, spacing: 18) {
@@ -109,7 +108,6 @@ struct AppSettingsView: View {
                 }
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .navigationTitle(navigation.selection.title)
         }
         .frame(minWidth: 720, idealWidth: 760, minHeight: 560, idealHeight: 600)
         .background(Color(nsColor: .windowBackgroundColor))
@@ -133,8 +131,8 @@ struct AppSettingsView: View {
             GeneralSettingsPage(environment: environment)
         case .about:
             AboutSettingsPage()
-        case .floatingWindow:
-            FloatingWindowSettingsPage(settings: settings)
+        case .previewWindow:
+            PreviewWindowSettingsPage(settings: settings)
         case .frameShape:
             FrameShapeSettingsPage(settings: settings)
         case .notchShortcut:
@@ -182,17 +180,6 @@ private struct GeneralSettingsPage: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 18) {
-            SettingsCard(title: "Appearance") {
-                SettingsRow("Menu bar symbol", subtitle: "Pick the tiny icon that sits in the macOS menu bar.") {
-                    MenuBarIconStrip(selection: $settings.menuBarIconStyle)
-                        .frame(width: 210)
-                }
-
-                SettingsDivider()
-
-                SettingsToggleRow("Show icon in Dock", isOn: showDockIconBinding)
-            }
-
             SettingsCard(title: "General") {
                 SettingsRow("Keyboard shortcut") {
                     ShortcutRecorderView(shortcut: shortcutBinding)
@@ -354,21 +341,12 @@ private struct AboutSettingsPage: View {
     }
 }
 
-private struct FloatingWindowSettingsPage: View {
+private struct PreviewWindowSettingsPage: View {
     @ObservedObject var settings: SettingsService
 
     var body: some View {
         VStack(alignment: .leading, spacing: 18) {
             SettingsCard {
-                SettingsRow("Window style") {
-                    HStack(spacing: 12) {
-                        WindowModeChoice(mode: .floatingWindow, selection: $settings.previewWindowMode)
-                        WindowModeChoice(mode: .popover, selection: $settings.previewWindowMode)
-                    }
-                }
-
-                SettingsDivider()
-
                 SettingsRow("Window position", subtitle: "The preview opens near the active display unless you place it yourself.") {
                     ScreenPlacementPreview()
                         .frame(width: 230, height: 118)
@@ -431,10 +409,6 @@ private struct NotchShortcutSettingsPage: View {
 
             SettingsCard {
                 SettingsToggleRow("Enable Notch Shortcut", subtitle: "Click behind the built-in camera area to show Kondreh.", isOn: notchEnabledBinding)
-
-                SettingsDivider()
-
-                SettingsToggleRow("Hide menu bar icon", subtitle: "When the notch shortcut is enabled, keep the menu bar tidy.", isOn: hideMenuIconBinding)
             }
 
             Text("This can feel different depending on the display and other apps that watch notch clicks.")
@@ -453,17 +427,6 @@ private struct NotchShortcutSettingsPage: View {
                 settings.showMenuBarIcon = false
             } else if enabled == false {
                 settings.showMenuBarIcon = true
-            }
-        }
-    }
-
-    private var hideMenuIconBinding: Binding<Bool> {
-        Binding {
-            settings.hideMenuBarIconForNotch
-        } set: { hidden in
-            settings.hideMenuBarIconForNotch = hidden
-            if settings.notchTriggerEnabled {
-                settings.showMenuBarIcon = hidden == false
             }
         }
     }
@@ -760,49 +723,6 @@ private struct SymbolChoiceButton: View {
     }
 }
 
-private struct WindowModeChoice: View {
-    var mode: PreviewWindowMode
-    @Binding var selection: PreviewWindowMode
-
-    var body: some View {
-        Button {
-            selection = mode
-        } label: {
-            VStack(spacing: 6) {
-                ZStack(alignment: mode == .popover ? .top : .center) {
-                    RoundedRectangle(cornerRadius: mode == .popover ? 8 : 4, style: .continuous)
-                        .fill(Color.secondary.opacity(0.28))
-                        .frame(width: 86, height: 50)
-
-                    if mode == .floatingWindow {
-                        HStack(spacing: 4) {
-                            Circle().fill(.secondary.opacity(0.5)).frame(width: 5, height: 5)
-                            Circle().fill(.secondary.opacity(0.5)).frame(width: 5, height: 5)
-                            Circle().fill(.secondary.opacity(0.5)).frame(width: 5, height: 5)
-                            Spacer()
-                        }
-                        .padding(6)
-                    } else {
-                        Capsule()
-                            .fill(Color(nsColor: .windowBackgroundColor))
-                            .frame(width: 18, height: 7)
-                            .offset(y: -4)
-                    }
-                }
-                .overlay {
-                    RoundedRectangle(cornerRadius: 8, style: .continuous)
-                        .stroke(selection == mode ? Color.accentColor : Color.clear, lineWidth: 2)
-                }
-
-                Text(mode.displayName)
-                    .font(.caption.weight(.semibold))
-                    .foregroundStyle(selection == mode ? .primary : .secondary)
-            }
-        }
-        .buttonStyle(.plain)
-    }
-}
-
 private struct MaskStyleChoice: View {
     var style: WindowMaskStyle
     @Binding var selection: WindowMaskStyle
@@ -1025,7 +945,7 @@ enum AppIconApplier {
 
     static func apply(_ style: AppIconStyle, updateBundleIcon: Bool) {
         rememberOriginalIcon()
-        let image = previewImage(for: style)
+        let image = applicationImage(for: style)
         NSApp.applicationIconImage = image
 
         guard updateBundleIcon else {
@@ -1041,11 +961,17 @@ enum AppIconApplier {
     }
 
     static func previewImage(for style: AppIconStyle) -> NSImage {
-        rememberOriginalIcon()
+        accentImage(for: style)
+    }
+
+    private static func applicationImage(for style: AppIconStyle) -> NSImage {
         if style == .standard, let originalIcon {
             return originalIcon
         }
+        return accentImage(for: style)
+    }
 
+    private static func accentImage(for style: AppIconStyle) -> NSImage {
         let size = NSSize(width: 1024, height: 1024)
         let image = NSImage(size: size)
         image.lockFocus()
@@ -1057,7 +983,6 @@ enum AppIconApplier {
 
         backgroundGradient(for: style).draw(in: rect, angle: -35)
         drawDepth(in: rect)
-        drawSymbol(for: style, in: rect)
 
         return image
     }
@@ -1090,17 +1015,5 @@ enum AppIconApplier {
         NSBezierPath(ovalIn: NSRect(x: rect.midX - 240, y: rect.midY - 180, width: 480, height: 480)).fill()
         NSColor.black.withAlphaComponent(0.18).setFill()
         NSBezierPath(roundedRect: rect.insetBy(dx: 70, dy: 70), xRadius: 180, yRadius: 180).stroke()
-    }
-
-    private static func drawSymbol(for style: AppIconStyle, in rect: NSRect) {
-        let symbolRect = NSRect(x: rect.midX - 220, y: rect.midY - 220, width: 440, height: 440)
-        let symbol = NSImage(systemSymbolName: style.symbolName, accessibilityDescription: nil)?
-            .withSymbolConfiguration(.init(pointSize: 330, weight: .semibold))
-        symbol?.isTemplate = true
-
-        NSGraphicsContext.saveGraphicsState()
-        NSColor.white.withAlphaComponent(0.9).set()
-        symbol?.draw(in: symbolRect, from: .zero, operation: .sourceOver, fraction: 1)
-        NSGraphicsContext.restoreGraphicsState()
     }
 }

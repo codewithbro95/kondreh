@@ -19,34 +19,12 @@ struct PreviewView: View {
     }
 
     var body: some View {
-        Group {
-            if settings.previewWindowMode == .popover {
-                popoverBody
-            } else {
-                floatingWindowBody
-            }
-        }
-        .background(settings.previewWindowMode == .popover ? Color.clear : Color(nsColor: .windowBackgroundColor).opacity(0.001))
-        .preferredColorScheme(settings.appearance.colorScheme)
-        .task {
-            viewModel.refreshLicense()
-        }
-    }
-
-    private var floatingWindowBody: some View {
-        VStack(spacing: 0) {
-            previewStage
-                .padding([.top, .horizontal], 12)
-
-            PreviewControlsView(environment: environment, close: close)
-                .padding(12)
-        }
-        .background(.regularMaterial)
-    }
-
-    private var popoverBody: some View {
         previewStage
             .background(.clear)
+            .preferredColorScheme(settings.appearance.colorScheme)
+            .task {
+                viewModel.refreshLicense()
+            }
     }
 
     private var previewStage: some View {
@@ -57,9 +35,9 @@ struct PreviewView: View {
                 .clipShape(RoundedRectangle(cornerRadius: previewCornerRadius, style: .continuous))
                 .overlay {
                     RoundedRectangle(cornerRadius: previewCornerRadius, style: .continuous)
-                        .stroke(.white.opacity(settings.previewWindowMode == .popover ? 0.16 : 0.08), lineWidth: 1)
+                        .stroke(.white.opacity(0.16), lineWidth: 1)
                 }
-                .shadow(color: .black.opacity(settings.previewWindowMode == .popover ? 0.34 : 0), radius: 18, y: 10)
+                .shadow(color: .black.opacity(0.34), radius: 18, y: 10)
 
             if cameraManager.state == .running {
                 statusPill
@@ -67,14 +45,12 @@ struct PreviewView: View {
                     .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
             }
 
-            if settings.previewWindowMode == .popover {
-                PreviewGearMenu(environment: environment, close: close)
-                    .padding(10)
+            PreviewGearMenu(environment: environment, close: close)
+                .padding(10)
 
-                quickPictureButton
-                    .padding(10)
-                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomLeading)
-            }
+            quickPictureButton
+                .padding(10)
+                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomLeading)
 
             if settings.showCameraName, let device = cameraManager.devices.first(where: { $0.id == cameraManager.activeDeviceID }) {
                 Text(device.name)
@@ -83,9 +59,9 @@ struct PreviewView: View {
                     .padding(.horizontal, 9)
                     .padding(.vertical, 5)
                     .background(.black.opacity(0.42), in: Capsule())
-                    .padding(settings.previewWindowMode == .popover ? 10 : 20)
+                    .padding(10)
                     .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomLeading)
-                    .opacity(settings.previewWindowMode == .popover ? 0 : 1)
+                    .opacity(0)
                     .accessibilityLabel("Active camera: \(device.name)")
             }
 

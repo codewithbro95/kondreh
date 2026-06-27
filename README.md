@@ -14,7 +14,7 @@ Kondreh is a private native macOS menu-bar utility for checking your appearance 
 - License model: one-time purchase with a seven-day free trial
 - Price: `$4.99 lifetime`
 - Support: `hello@fotiecodes.com`
-- Website: `[YOUR_WEBSITE_URL]`
+- Website: `https://fotiecodes.com`
 - Privacy policy: `[YOUR_PRIVACY_POLICY_URL]`
 
 ## Assumptions

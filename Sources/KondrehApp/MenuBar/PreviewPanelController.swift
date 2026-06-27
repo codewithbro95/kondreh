@@ -12,7 +12,6 @@ enum PreviewPanelPositioning {
 final class PreviewPanelController: NSObject, NSWindowDelegate {
     private let environment: AppEnvironment
     private var panel: NSPanel?
-    private var panelMode: PreviewWindowMode?
     private var lastPositioning: PreviewPanelPositioning = .activeScreenCenter
     private var eventMonitors: [Any] = []
     private var settingsCancellable: AnyCancellable?
@@ -22,10 +21,6 @@ final class PreviewPanelController: NSObject, NSWindowDelegate {
         super.init()
         settingsCancellable = environment.settings.objectWillChange.sink { [weak self] _ in
             DispatchQueue.main.async {
-                if self?.isVisible == true,
-                   self?.panelMode != self?.environment.settings.previewWindowMode {
-                    self?.replaceVisiblePanelForCurrentMode()
-                }
                 self?.applyWindowLevel()
                 self?.applyWindowShape()
                 if self?.isVisible == true {
@@ -49,17 +44,11 @@ final class PreviewPanelController: NSObject, NSWindowDelegate {
 
     func show(positioning: PreviewPanelPositioning) {
         lastPositioning = positioning
-        if panelMode != environment.settings.previewWindowMode {
-            panel?.orderOut(nil)
-            panel = nil
-        }
-
-        let panel = panel ?? makePanel(mode: environment.settings.previewWindowMode)
+        let panel = panel ?? makePanel()
         self.panel = panel
-        panelMode = environment.settings.previewWindowMode
         applyWindowLevel()
         applyWindowShape()
-        applyPopoverSizeIfNeeded(to: panel, mode: environment.settings.previewWindowMode)
+        applyPanelSizeIfNeeded(to: panel)
         panel.contentView = NSHostingView(rootView: PreviewView(environment: environment) { [weak self] in
             self?.close()
         })
@@ -84,14 +73,11 @@ final class PreviewPanelController: NSObject, NSWindowDelegate {
         close()
     }
 
-    private func makePanel(mode: PreviewWindowMode) -> NSPanel {
-        let size = panelSize(for: mode)
-        let styleMask: NSWindow.StyleMask = mode == .popover
-            ? [.borderless, .nonactivatingPanel]
-            : [.titled, .closable, .resizable, .fullSizeContentView]
+    private func makePanel() -> NSPanel {
+        let size = panelSize()
         let panel = NSPanel(
             contentRect: NSRect(x: 0, y: 0, width: size.width, height: size.height),
-            styleMask: styleMask,
+            styleMask: [.borderless, .nonactivatingPanel],
             backing: .buffered,
             defer: false
         )
@@ -100,8 +86,8 @@ final class PreviewPanelController: NSObject, NSWindowDelegate {
         panel.isReleasedWhenClosed = false
         panel.hidesOnDeactivate = false
         panel.minSize = NSSize(width: AppConstants.minimumPanelWidth, height: AppConstants.minimumPanelHeight)
-        panel.titleVisibility = mode == .popover ? .hidden : .visible
-        panel.titlebarAppearsTransparent = mode == .popover
+        panel.titleVisibility = .hidden
+        panel.titlebarAppearsTransparent = true
         panel.isOpaque = false
         panel.backgroundColor = .clear
         panel.hasShadow = true
@@ -111,24 +97,16 @@ final class PreviewPanelController: NSObject, NSWindowDelegate {
         return panel
     }
 
-    private func panelSize(for mode: PreviewWindowMode) -> CGSizeValue {
+    private func panelSize() -> CGSizeValue {
         let stored = environment.settings.panelSize
-        guard mode == .popover else {
-            return stored
-        }
-
         return CGSizeValue(
             width: min(max(stored.width, AppConstants.minimumPanelWidth), 424),
             height: min(max(stored.height, AppConstants.minimumPanelHeight), 236)
         )
     }
 
-    private func applyPopoverSizeIfNeeded(to panel: NSPanel, mode: PreviewWindowMode) {
-        guard mode == .popover else {
-            return
-        }
-
-        let size = panelSize(for: mode)
+    private func applyPanelSizeIfNeeded(to panel: NSPanel) {
+        let size = panelSize()
         if panel.frame.width != size.width || panel.frame.height != size.height {
             panel.setContentSize(NSSize(width: size.width, height: size.height))
         }
@@ -147,33 +125,7 @@ final class PreviewPanelController: NSObject, NSWindowDelegate {
             panel.resizeIncrements = NSSize(width: 1, height: 1)
             panel.contentAspectRatio = .zero
         }
-        panel.isMovableByWindowBackground = environment.settings.previewWindowMode == .popover || environment.settings.manualWindowPosition
-    }
-
-    private func replaceVisiblePanelForCurrentMode() {
-        let oldFrame = panel?.frame
-        panel?.orderOut(nil)
-        let newPanel = makePanel(mode: environment.settings.previewWindowMode)
-        panel = newPanel
-        panelMode = environment.settings.previewWindowMode
-        applyWindowLevel()
-        applyWindowShape()
-        applyPopoverSizeIfNeeded(to: newPanel, mode: environment.settings.previewWindowMode)
-        newPanel.contentView = NSHostingView(rootView: PreviewView(environment: environment) { [weak self] in
-            self?.close()
-        })
-        if let oldFrame, environment.settings.manualWindowPosition {
-            var replacementFrame = oldFrame
-            if environment.settings.previewWindowMode == .popover {
-                let size = panelSize(for: .popover)
-                replacementFrame.size = NSSize(width: size.width, height: size.height)
-            }
-            newPanel.setFrame(replacementFrame, display: true)
-        } else {
-            ScreenPositioning.position(panel: newPanel, positioning: lastPositioning)
-        }
-        newPanel.makeKeyAndOrderFront(nil)
-        NSApp.activate(ignoringOtherApps: true)
+        panel.isMovableByWindowBackground = true
     }
 
     private func installEventMonitors() {
