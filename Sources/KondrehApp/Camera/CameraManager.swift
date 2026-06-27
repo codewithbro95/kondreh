@@ -1,4 +1,5 @@
-import AVFoundation
+@preconcurrency import AVFoundation
+import AppKit
 import Combine
 import KondrehCore
 
@@ -10,9 +11,11 @@ final class CameraManager: NSObject, ObservableObject, @unchecked Sendable {
     let session = AVCaptureSession()
 
     private let settings: SettingsService
+    private let photoOutput = AVCapturePhotoOutput()
     // AVFoundation session mutation is serialized through this queue; UI state is published back on the main actor.
     private let sessionQueue = DispatchQueue(label: "com.codewithbro.kondreh.camera.session")
     private var currentInput: AVCaptureDeviceInput?
+    private var photoDelegates: [QuickPhotoCaptureDelegate] = []
     private var wantsRunning = false
     private var deviceObservers: [NSObjectProtocol] = []
 
@@ -114,6 +117,32 @@ final class CameraManager: NSObject, ObservableObject, @unchecked Sendable {
     }
 
     @MainActor
+    func captureQuickPicture(completion: @escaping (Result<URL, Error>) -> Void) {
+        guard state == .running, session.isRunning else {
+            completion(.failure(QuickPictureError.cameraNotReady))
+            return
+        }
+
+        var delegateRef: QuickPhotoCaptureDelegate?
+        let delegate = QuickPhotoCaptureDelegate { [weak self] result in
+            Task { @MainActor in
+                if let self, let delegateRef {
+                    self.photoDelegates.removeAll { $0 === delegateRef }
+                }
+                completion(result)
+            }
+        }
+        delegateRef = delegate
+        photoDelegates.append(delegate)
+
+        sessionQueue.async { [weak self] in
+            guard let self else { return }
+            let photoSettings = AVCapturePhotoSettings()
+            self.photoOutput.capturePhoto(with: photoSettings, delegate: delegate)
+        }
+    }
+
+    @MainActor
     private func startAuthorized() {
         refreshDevices()
         guard devices.isEmpty == false else {
@@ -158,6 +187,10 @@ final class CameraManager: NSObject, ObservableObject, @unchecked Sendable {
                 }
                 self.session.addInput(input)
                 self.currentInput = input
+                if self.session.outputs.contains(self.photoOutput) == false,
+                   self.session.canAddOutput(self.photoOutput) {
+                    self.session.addOutput(self.photoOutput)
+                }
                 self.session.commitConfiguration()
 
                 if self.session.isRunning == false {
@@ -226,6 +259,108 @@ final class CameraManager: NSObject, ObservableObject, @unchecked Sendable {
     private static func avDevice(with id: String?) -> AVCaptureDevice? {
         guard let id else { return nil }
         return discoverDevices().first(where: { $0.uniqueID == id })
+    }
+}
+
+enum QuickPictureError: LocalizedError {
+    case cameraNotReady
+    case missingImageData
+    case saveFailed
+
+    var errorDescription: String? {
+        switch self {
+        case .cameraNotReady:
+            "Camera is not ready yet."
+        case .missingImageData:
+            "Could not read the captured image."
+        case .saveFailed:
+            "Could not save the picture."
+        }
+    }
+}
+
+private final class QuickPhotoCaptureDelegate: NSObject, AVCapturePhotoCaptureDelegate, @unchecked Sendable {
+    private let completion: (Result<URL, Error>) -> Void
+
+    init(completion: @escaping (Result<URL, Error>) -> Void) {
+        self.completion = completion
+    }
+
+    func photoOutput(
+        _ output: AVCapturePhotoOutput,
+        didFinishProcessingPhoto photo: AVCapturePhoto,
+        error: Error?
+    ) {
+        if let error {
+            completion(.failure(error))
+            return
+        }
+
+        guard let data = photo.fileDataRepresentation() else {
+            completion(.failure(QuickPictureError.missingImageData))
+            return
+        }
+
+        do {
+            let url = try Self.save(data: data)
+            completion(.success(url))
+        } catch {
+            DispatchQueue.main.async {
+                Self.askUserWhereToSave(data: data, completion: self.completion)
+            }
+        }
+    }
+
+    private static func save(data: Data) throws -> URL {
+        let manager = FileManager.default
+        let directories = [
+            manager.urls(for: .picturesDirectory, in: .userDomainMask).first,
+            manager.urls(for: .documentDirectory, in: .userDomainMask).first,
+            manager.urls(for: .downloadsDirectory, in: .userDomainMask).first,
+            manager.temporaryDirectory
+        ].compactMap { $0 }
+
+        var lastError: Error?
+        for baseURL in directories {
+            do {
+                let directory = baseURL.appendingPathComponent("Kondreh", isDirectory: true)
+                try manager.createDirectory(at: directory, withIntermediateDirectories: true)
+                let url = directory.appendingPathComponent(filename())
+                try data.write(to: url, options: .atomic)
+                return url
+            } catch {
+                lastError = error
+            }
+        }
+
+        throw lastError ?? QuickPictureError.saveFailed
+    }
+
+    @MainActor
+    private static func askUserWhereToSave(data: Data, completion: @escaping (Result<URL, Error>) -> Void) {
+        let panel = NSSavePanel()
+        panel.nameFieldStringValue = filename()
+        panel.allowedContentTypes = [.jpeg]
+        panel.canCreateDirectories = true
+        panel.begin { response in
+            guard response == .OK, let url = panel.url else {
+                completion(.failure(QuickPictureError.saveFailed))
+                return
+            }
+
+            do {
+                try data.write(to: url, options: .atomic)
+                completion(.success(url))
+            } catch {
+                completion(.failure(error))
+            }
+        }
+    }
+
+    private static func filename() -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd-HHmmss"
+        return "Kondreh-\(formatter.string(from: Date())).jpg"
     }
 }
 

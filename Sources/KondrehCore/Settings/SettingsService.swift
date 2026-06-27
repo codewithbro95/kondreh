@@ -1,6 +1,102 @@
 import Combine
 import Foundation
 
+public enum MenuBarIconStyle: String, CaseIterable, Codable, Identifiable {
+    case video
+    case camera
+    case lens
+    case aperture
+    case viewfinder
+    case compact
+
+    public var id: String { rawValue }
+
+    public var displayName: String {
+        switch self {
+        case .video: "Default"
+        case .camera: "Camera"
+        case .lens: "Lens"
+        case .aperture: "Aperture"
+        case .viewfinder: "Frame"
+        case .compact: "Dot"
+        }
+    }
+
+    public var symbolName: String {
+        switch self {
+        case .video: "video.fill"
+        case .camera: "camera.fill"
+        case .lens: "circle.circle.fill"
+        case .aperture: "circle.fill"
+        case .viewfinder: "viewfinder"
+        case .compact: "record.circle"
+        }
+    }
+}
+
+public enum PreviewWindowMode: String, CaseIterable, Codable, Identifiable {
+    case popover
+    case floatingWindow
+
+    public var id: String { rawValue }
+
+    public var displayName: String {
+        switch self {
+        case .popover: "Menu Popover"
+        case .floatingWindow: "Floating Window"
+        }
+    }
+}
+
+public enum WindowMaskStyle: String, CaseIterable, Codable, Identifiable {
+    case rounded
+    case square
+    case circle
+
+    public var id: String { rawValue }
+
+    public var displayName: String {
+        switch self {
+        case .rounded: "Rounded"
+        case .square: "Square"
+        case .circle: "Circle"
+        }
+    }
+}
+
+public enum AppIconStyle: String, CaseIterable, Codable, Identifiable {
+    case standard
+    case focus
+    case studio
+    case midnight
+    case classic
+    case soft
+
+    public var id: String { rawValue }
+
+    public var displayName: String {
+        switch self {
+        case .standard: "Standard"
+        case .focus: "Focus"
+        case .studio: "Studio"
+        case .midnight: "Midnight"
+        case .classic: "Classic"
+        case .soft: "Soft"
+        }
+    }
+
+    public var symbolName: String {
+        switch self {
+        case .standard: "app.fill"
+        case .focus: "camera.aperture"
+        case .studio: "video.square.fill"
+        case .midnight: "moon.stars.fill"
+        case .classic: "rectangle.inset.filled"
+        case .soft: "sparkles"
+        }
+    }
+}
+
 @MainActor
 public final class SettingsService: ObservableObject {
     private enum Key {
@@ -11,6 +107,8 @@ public final class SettingsService: ObservableObject {
         static let closeOnOutsideClick = "closeOnOutsideClick"
         static let launchAtLogin = "launchAtLogin"
         static let showMenuBarIcon = "showMenuBarIcon"
+        static let showDockIcon = "showDockIcon"
+        static let menuBarIconStyle = "menuBarIconStyle"
         static let reopenLastSelectedCamera = "reopenLastSelectedCamera"
         static let preferredQuality = "preferredQuality"
         static let showCameraName = "showCameraName"
@@ -21,6 +119,18 @@ public final class SettingsService: ObservableObject {
         static let onboardingCompleted = "onboardingCompleted"
         static let panelWidth = "panelWidth"
         static let panelHeight = "panelHeight"
+        static let previewWindowMode = "previewWindowMode"
+        static let lockAspectRatio = "lockAspectRatio"
+        static let manualWindowPosition = "manualWindowPosition"
+        static let windowMaskStyle = "windowMaskStyle"
+        static let maskZoom = "maskZoom"
+        static let maskRotation = "maskRotation"
+        static let notchTriggerEnabled = "notchTriggerEnabled"
+        static let hideMenuBarIconForNotch = "hideMenuBarIconForNotch"
+        static let micCheckEnabled = "micCheckEnabled"
+        static let micCheckHoverOnly = "micCheckHoverOnly"
+        static let reactionsEnabled = "reactionsEnabled"
+        static let alternateAppIconStyle = "alternateAppIconStyle"
     }
 
     private let defaults: UserDefaults
@@ -66,6 +176,16 @@ public final class SettingsService: ObservableObject {
     public var showMenuBarIcon: Bool {
         get { defaults.bool(forKey: Key.showMenuBarIcon) }
         set { set(newValue, for: Key.showMenuBarIcon) }
+    }
+
+    public var showDockIcon: Bool {
+        get { defaults.bool(forKey: Key.showDockIcon) }
+        set { set(newValue, for: Key.showDockIcon) }
+    }
+
+    public var menuBarIconStyle: MenuBarIconStyle {
+        get { enumValue(for: Key.menuBarIconStyle, default: .video) }
+        set { setEnum(newValue, for: Key.menuBarIconStyle) }
     }
 
     public var reopenLastSelectedCamera: Bool {
@@ -135,6 +255,66 @@ public final class SettingsService: ObservableObject {
         }
     }
 
+    public var previewWindowMode: PreviewWindowMode {
+        get { enumValue(for: Key.previewWindowMode, default: .popover) }
+        set { setEnum(newValue, for: Key.previewWindowMode) }
+    }
+
+    public var lockAspectRatio: Bool {
+        get { defaults.bool(forKey: Key.lockAspectRatio) }
+        set { set(newValue, for: Key.lockAspectRatio) }
+    }
+
+    public var manualWindowPosition: Bool {
+        get { defaults.bool(forKey: Key.manualWindowPosition) }
+        set { set(newValue, for: Key.manualWindowPosition) }
+    }
+
+    public var windowMaskStyle: WindowMaskStyle {
+        get { enumValue(for: Key.windowMaskStyle, default: .rounded) }
+        set { setEnum(newValue, for: Key.windowMaskStyle) }
+    }
+
+    public var maskZoom: Double {
+        get { defaults.double(forKey: Key.maskZoom) }
+        set { set(max(1.0, min(newValue, 3.0)), for: Key.maskZoom) }
+    }
+
+    public var maskRotation: Double {
+        get { defaults.double(forKey: Key.maskRotation) }
+        set { set(max(0, min(newValue, 270)), for: Key.maskRotation) }
+    }
+
+    public var notchTriggerEnabled: Bool {
+        get { defaults.bool(forKey: Key.notchTriggerEnabled) }
+        set { set(newValue, for: Key.notchTriggerEnabled) }
+    }
+
+    public var hideMenuBarIconForNotch: Bool {
+        get { defaults.bool(forKey: Key.hideMenuBarIconForNotch) }
+        set { set(newValue, for: Key.hideMenuBarIconForNotch) }
+    }
+
+    public var micCheckEnabled: Bool {
+        get { defaults.bool(forKey: Key.micCheckEnabled) }
+        set { set(newValue, for: Key.micCheckEnabled) }
+    }
+
+    public var micCheckHoverOnly: Bool {
+        get { defaults.bool(forKey: Key.micCheckHoverOnly) }
+        set { set(newValue, for: Key.micCheckHoverOnly) }
+    }
+
+    public var reactionsEnabled: Bool {
+        get { defaults.bool(forKey: Key.reactionsEnabled) }
+        set { set(newValue, for: Key.reactionsEnabled) }
+    }
+
+    public var alternateAppIconStyle: AppIconStyle {
+        get { enumValue(for: Key.alternateAppIconStyle, default: .standard) }
+        set { setEnum(newValue, for: Key.alternateAppIconStyle) }
+    }
+
     public func restoreDefaultShortcut() {
         keyboardShortcut = .default
     }
@@ -147,6 +327,8 @@ public final class SettingsService: ObservableObject {
             Key.closeOnOutsideClick: false,
             Key.launchAtLogin: false,
             Key.showMenuBarIcon: true,
+            Key.showDockIcon: false,
+            Key.menuBarIconStyle: MenuBarIconStyle.video.rawValue,
             Key.reopenLastSelectedCamera: true,
             Key.preferredQuality: PreviewQuality.balanced.rawValue,
             Key.showCameraName: true,
@@ -155,7 +337,19 @@ public final class SettingsService: ObservableObject {
             Key.previewCornerRadius: 12.0,
             Key.onboardingCompleted: false,
             Key.panelWidth: AppConstants.defaultPanelWidth,
-            Key.panelHeight: AppConstants.defaultPanelHeight
+            Key.panelHeight: AppConstants.defaultPanelHeight,
+            Key.previewWindowMode: PreviewWindowMode.popover.rawValue,
+            Key.lockAspectRatio: false,
+            Key.manualWindowPosition: false,
+            Key.windowMaskStyle: WindowMaskStyle.rounded.rawValue,
+            Key.maskZoom: 1.0,
+            Key.maskRotation: 0.0,
+            Key.notchTriggerEnabled: false,
+            Key.hideMenuBarIconForNotch: false,
+            Key.micCheckEnabled: false,
+            Key.micCheckHoverOnly: true,
+            Key.reactionsEnabled: false,
+            Key.alternateAppIconStyle: AppIconStyle.standard.rawValue
         ])
     }
 

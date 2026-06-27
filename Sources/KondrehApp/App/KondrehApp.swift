@@ -8,7 +8,7 @@ struct KondrehApp: App {
     var body: some Scene {
         Settings {
             AppSettingsView(environment: environment)
-                .frame(width: 560, height: 560)
+                .frame(width: 760, height: 600)
         }
     }
 }

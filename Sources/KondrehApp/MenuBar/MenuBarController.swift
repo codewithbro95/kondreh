@@ -1,4 +1,5 @@
 import AppKit
+import Combine
 import KondrehCore
 
 @MainActor
@@ -6,22 +7,34 @@ final class MenuBarController: NSObject {
     private let environment: AppEnvironment
     private let previewPanelController: PreviewPanelController
     private var statusItem: NSStatusItem?
+    private var settingsCancellable: AnyCancellable?
 
     init(environment: AppEnvironment, previewPanelController: PreviewPanelController) {
         self.environment = environment
         self.previewPanelController = previewPanelController
         super.init()
         rebuildStatusItem()
+        settingsCancellable = environment.settings.objectWillChange.sink { [weak self] _ in
+            DispatchQueue.main.async {
+                self?.rebuildStatusItem()
+            }
+        }
     }
 
     func rebuildStatusItem() {
         if environment.settings.showMenuBarIcon == false {
+            if let statusItem {
+                NSStatusBar.system.removeStatusItem(statusItem)
+            }
             statusItem = nil
             return
         }
 
-        let item = NSStatusBar.system.statusItem(withLength: NSStatusItem.squareLength)
-        item.button?.image = NSImage(systemSymbolName: AppConstants.menuBarSymbolName, accessibilityDescription: AppConstants.appName)
+        let item = statusItem ?? NSStatusBar.system.statusItem(withLength: NSStatusItem.squareLength)
+        item.button?.image = NSImage(
+            systemSymbolName: environment.settings.menuBarIconStyle.symbolName,
+            accessibilityDescription: AppConstants.appName
+        )
         item.button?.target = self
         item.button?.action = #selector(statusItemPressed(_:))
         item.button?.sendAction(on: [.leftMouseUp, .rightMouseUp])
@@ -36,32 +49,36 @@ final class MenuBarController: NSObject {
         }
 
         if event.type == .rightMouseUp || event.modifierFlags.contains(.control) {
-            showMenu()
+            showMenu(from: sender)
         } else {
             previewPanelController.toggle(positioning: .statusItem(statusItem))
         }
     }
 
-    private func showMenu() {
+    private func showMenu(from sender: NSStatusBarButton) {
         let menu = NSMenu()
+        menu.autoenablesItems = false
         menu.addItem(NSMenuItem(title: "Open Camera Preview", action: #selector(openPreview), keyEquivalent: ""))
-        menu.addItem(NSMenuItem(title: "Settings", action: #selector(openSettings), keyEquivalent: ","))
+        let settingsItem = NSMenuItem(title: "Settings", action: #selector(AppDelegate.openSettings(_:)), keyEquivalent: ",")
+        settingsItem.keyEquivalentModifierMask = NSEvent.ModifierFlags.command
+        settingsItem.target = NSApp.delegate
+        settingsItem.isEnabled = true
+        menu.addItem(settingsItem)
         menu.addItem(NSMenuItem(title: "About \(AppConstants.appName)", action: #selector(showAbout), keyEquivalent: ""))
         menu.addItem(NSMenuItem(title: "Check for Updates", action: #selector(checkForUpdates), keyEquivalent: ""))
         menu.addItem(.separator())
         menu.addItem(NSMenuItem(title: "Quit \(AppConstants.appName)", action: #selector(quit), keyEquivalent: "q"))
-        menu.items.forEach { $0.target = self }
-        statusItem?.menu = menu
-        statusItem?.button?.performClick(nil)
-        statusItem?.menu = nil
+        menu.items.forEach { item in
+            if item.target == nil {
+                item.target = self
+            }
+            item.isEnabled = item.isSeparatorItem == false
+        }
+        menu.popUp(positioning: nil, at: NSPoint(x: 0, y: sender.bounds.height + 2), in: sender)
     }
 
     @objc private func openPreview() {
         previewPanelController.show(positioning: .statusItem(statusItem))
-    }
-
-    @objc private func openSettings() {
-        (NSApp.delegate as? AppDelegate)?.showSettings()
     }
 
     @objc private func showAbout() {
